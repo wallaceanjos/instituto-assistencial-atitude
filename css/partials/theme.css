@@ -1,0 +1,50 @@
+
+.light {
+    color-scheme: light;
+}
+
+.dark {
+    color-scheme: dark;
+}
+
+body.dark-theme {
+    color-scheme: dark;
+}
+
+body.light-theme {
+    color-scheme: light;
+}
+
+  /* Tema Claro */
+  @media (prefers-color-scheme: light) {
+    :root {
+      --bg: var(--light-bg);
+      --fg: var(--light-fg);
+      --surface: var(--light-surface);
+      --code: var(--light-code);
+      --primary: var(--light-primary);
+      --accent: var(--light-accent);
+      --active: var(--light-active);
+      --level: var(--light-level);
+      --link: var(--light-link);
+      --hover: var(--light-hover);
+      --overlay: var(--light-overlay);
+    }
+  }
+  
+  /* Tema Escuro */
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: var(--dark-bg);
+      --fg: var(--dark-fg);
+      --surface: var(--dark-surface);
+      --code: var(--dark-code);
+      --primary: var(--dark-primary);
+      --accent: var(--dark-accent);
+      --active: var(--dark-active);
+      --level: var(--dark-level);
+      --link: var(--dark-link);
+      --hover: var(--dark-hover);
+      --overlay: var(--dark-overlay);
+    }
+  }

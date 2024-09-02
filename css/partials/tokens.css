@@ -1,0 +1,33 @@
+
+:root {
+    color-scheme: light dark;
+  
+    /* Tema Claro */
+    --light-bg: #f7f5f1;
+    --light-fg: #3c3c3c;
+    --light-surface: #fff;
+    --light-code: #ff5151;
+    --light-primary: #00aff5;
+    --light-accent: #ff6847;
+    --light-active: #00005e;
+    --light-level: rgba(0, 0, 0, .3);
+    --light-link: #0000c0;
+    --light-hover: #00ffff;
+    --light-overlay: #008b8b;
+  
+    /* Tema Escuro */
+    --dark-bg: #1c1c1c;
+    --dark-fg: #f7f5f1;
+    --dark-surface: #212121;
+    --dark-code: #ffcc00;
+    --dark-primary: #005475;
+    --dark-accent: #9c1d00;
+    --dark-active: #00005e;
+    --dark-level: rgba(255, 255, 255, .3);
+    --dark-link: #00bfff;
+    --dark-hover: #e0ffff;
+    --dark-overlay: #2f4f4f;
+  
+    /* Transição */
+    --transition: 0.1s;
+  }
