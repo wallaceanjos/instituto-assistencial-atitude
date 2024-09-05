@@ -1,0 +1,37 @@
+.yellow {
+    background: var(--yellow);
+    color: var(--lt-contrast)
+}
+
+.lightblue {
+    background: var(--lightblue);
+    color: var(--dk-contrast)
+}
+
+.darkblue {
+    background: var(--darkblue);
+    color: var(--dk-contrast)
+}
+.transparent {
+    background: transparent;
+}
+
+.background-bg{
+    background: light-dark(var(--light-bg), var(--dark-bg));
+}
+
+.background-bg-alpha{
+    background: light-dark(var(--light-bg-alpha), var(--dark-bg-alpha));
+}
+
+.background-surface{
+    background: light-dark(var(--light-surface), var(--dark-surface));
+}
+
+.background-surface-alpha{
+    background: light-dark(var(--light-surface-alpha), var(--dark-surface-alpha));
+}
+
+.color-white {
+    color: var(--dk-contrast);
+}

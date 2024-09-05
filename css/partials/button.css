@@ -1,0 +1,23 @@
+.btn{
+    display: inline-block;
+    padding: .5rem 1.3rem;
+    font-size: 14px;
+    border-radius: 2rem;
+    line-height: 1;
+    margin: 0 .2rem;
+    transition: var(--transition);
+    text-transform: uppercase;
+}
+
+.btn.solid,
+.btn.transparent:hover{
+    background-color: light-dark(var(--light-fg), var(--dark-fg));
+    color: light-dark(var(--dark-fg), var(--light-fg));
+}
+
+.btn.transparent,
+.btn.solid:hover{
+    background-color: transparent;
+    color: light-dark(var(--light-fg), var(--dark-fg));
+}
+
