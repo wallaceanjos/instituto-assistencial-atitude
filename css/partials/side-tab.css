@@ -6,46 +6,44 @@
 	position: relative;
 }
 
-.tab-input, .tab-content {
+.tab-input,
+.tab-content {
   clear: both;
   padding-top: 10px;
   display: none;
 }
 
 .tab-label {
-  font-weight: 700;
-  font-size: 18px;
   display: block;
   float: left;
-  width: 20%;
-  padding: 1.5em;
-  color: #757575;
-  cursor: pointer;
-  text-decoration: none;
-  text-align: center;
-  background: #f0f0f0;
+  background: transparent;
+  color: var(--lt-contrast);
+  border-color: var(--lightblue) !important;
+}
+
+#tab1:checked ~ .tab-navigation-panel .tab-label[for="tab1"],
+#tab2:checked ~ .tab-navigation-panel .tab-label[for="tab2"],
+#tab3:checked ~ .tab-navigation-panel .tab-label[for="tab3"],
+#tab4:checked ~ .tab-navigation-panel .tab-label[for="tab4"] {
+  background: var(--lightblue);
+  color: var(--dk-contrast);
+  border-color: var(--lightblue);
 }
 
 #tab1:checked ~ .tab-content-wrapper #content1,
 #tab2:checked ~ .tab-content-wrapper #content2,
 #tab3:checked ~ .tab-content-wrapper #content3,
-#tab4:checked ~ .tab-content-wrapper #content4,
-#tab5:checked ~ .tab-content-wrapper #content5 {
+#tab4:checked ~ .tab-content-wrapper #content4 {
   display: block;
-  padding: 20px;
-  background: #fff;
-  color: #999;
-  border-bottom: 2px solid #f0f0f0;
+  background: light-dark(var(--light-surface), var(--dark-surface));
+  color: light-dark(var(--light-fg), var(--dark-fg));
 }
 
 .tab_container .tab-content p,
 .tab_container .tab-content h3 {
-  -webkit-animation: fadeIn 0.7s ease-in-out;
-  -moz-animation: fadeIn 0.7s ease-in-out;
-  animation: fadeIn 0.7s ease-in-out;
-}
-.tab_container .tab-content h3  {
-  text-align: center;
+  -webkit-animation: fadeIn 300ms ease-in-out;
+  -moz-animation: fadeIn 300ms ease-in-out;
+  animation: fadeIn 300ms ease-in-out;
 }
 
 .tab_container [id^="tab"]:checked + .tab-label {
@@ -65,7 +63,7 @@
 /*Media query*/
 @media only screen and (max-width: 930px) {
   .tab-label span {
-    font-size: 14px;
+    /* font-size: 14px; */
   }
   .tab-label .fa {
     font-size: 14px;
@@ -74,7 +72,7 @@
 
 @media only screen and (max-width: 768px) {
   .tab-label span {
-    display: none;
+    /* display: none; */
   }
 
   .tab-label .fa {
@@ -89,7 +87,7 @@
 /*Content Animation*/
 @keyframes fadeIn {
   0% {
-    transform: translate(0, 15px);
+    transform: translate(0, 5px);
   	opacity: 0;
   }
   

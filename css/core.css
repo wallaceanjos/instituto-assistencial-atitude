@@ -4,7 +4,9 @@
 @import "partials/slide.css";
 @import "partials/button.css";
 @import "partials/colors.css";
+@import "partials/elevation.css";
 @import "partials/side-tab.css";
+@import "partials/price.css";
 
 /* reset */
 * {
@@ -45,5 +47,4 @@ body {
     height: calc(100vh);
     min-height: 800px;
     width: 100%;
-    background: url(/images/bg-hero.jpg) no-repeat top center / cover;
 }

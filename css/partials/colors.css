@@ -3,6 +3,16 @@
     color: var(--lt-contrast)
 }
 
+.tomato {
+    background: var(--tomato);
+    color: var(--dk-contrast)
+}
+
+.guava {
+    background: var(--guava);
+    color: var(--dk-contrast)
+}
+
 .lightblue {
     background: var(--lightblue);
     color: var(--dk-contrast)
@@ -12,6 +22,7 @@
     background: var(--darkblue);
     color: var(--dk-contrast)
 }
+/*  BACKGROUNDS */
 .transparent {
     background: transparent;
 }
@@ -27,11 +38,38 @@
 .background-surface{
     background: light-dark(var(--light-surface), var(--dark-surface));
 }
-
+.background-surface-inverse{
+    background: light-dark(var(--dark-surface), var(--light-surface));
+    color: light-dark(var(--dk-contrast), var(--lt-contrast));
+}
 .background-surface-alpha{
     background: light-dark(var(--light-surface-alpha), var(--dark-surface-alpha));
 }
 
+/* COLORS */
+.color-yellow {
+    color: var(--yellow);
+}
+
+.color-tomato {
+    color: var(--tomato);
+}
+
+.color-lightblue {
+    color: var(--lightblue);
+}
+
+.color-darkblue {
+    color: var(--darkblue);
+}
+
 .color-white {
     color: var(--dk-contrast);
+}
+
+.color-fg {
+    color: light-dark(var(--light-fg), var(--dark-fg));
+}
+.color-fg-inverse {
+    color: light-dark(var(--dark-fg), var(--light-fg));
 }

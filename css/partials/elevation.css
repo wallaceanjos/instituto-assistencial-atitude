@@ -1,0 +1,57 @@
+/* Elevation Z-1 */
+.elevation-z-1 {
+    box-shadow: 
+        0px 1px 3px rgba(0, 0, 0, 0.1),   /* umbra */
+        0px 1px 2px rgba(0, 0, 0, 0.1),  /* penumbra */
+        0px 2px 1px rgba(0, 0, 0, 0.1);  /* antumbra */
+}
+
+/* Elevation Z-2 */
+.elevation-z-2 {
+    box-shadow: 
+        0px 3px 6px rgba(0, 0, 0, 0.1),   /* umbra */
+        0px 3px 4px rgba(0, 0, 0, 0.1),   /* penumbra */
+        0px 1px 8px rgba(0, 0, 0, 0.1);  /* antumbra */
+}
+
+/* Elevation Z-3 */
+.elevation-z-3 {
+    box-shadow: 
+        0px 6px 10px rgba(0, 0, 0, 0.1),  /* umbra */
+        0px 1px 18px rgba(0, 0, 0, 0.1), /* penumbra */
+        0px 3px 5px rgba(0, 0, 0, 0.1);   /* antumbra */
+}
+
+/* Elevation Z-4 */
+.elevation-z-4 {
+    box-shadow: 
+        0px 10px 20px rgba(0, 0, 0, 0.1), /* umbra */
+        0px 6px 15px rgba(0, 0, 0, 0.1),  /* penumbra */
+        0px 4px 22px rgba(0, 0, 0, 0.1);  /* antumbra */
+}
+
+.elevation-x-3-y-3-z-3 {
+    box-shadow: 
+        8px 8px 10px rgba(0, 0, 0, 0.1),  /* umbra */
+        8px 8px 18px rgba(0, 0, 0, 0.1), /* penumbra */
+        8px 8px 5px rgba(0, 0, 0, 0.1);   /* antumbra */
+}
+
+.text-shadow{
+    text-shadow: 
+        0px 0px 10px #00000044
+}
+
+.text-shadow-z-1 {
+    text-shadow: 
+        0px 1px 3px rgba(0, 0, 0, 0.2),   /* umbra */
+        0px 1px 2px rgba(0, 0, 0, 0.14),  /* penumbra */
+        0px 2px 1px rgba(0, 0, 0, 0.12);  /* antumbra */
+}
+
+.text-shadow-z-2 {
+    text-shadow: 
+        0px 3px 6px rgba(0, 0, 0, 0.3),   /* umbra */
+        0px 3px 4px rgba(0, 0, 0, 0.2),   /* penumbra */
+        0px 1px 8px rgba(0, 0, 0, 0.18);  /* antumbra */
+}
