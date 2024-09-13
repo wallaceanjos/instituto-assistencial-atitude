@@ -1,12 +1,12 @@
-@import "partials/theme.css";
-@import "partials/reset.css";
-@import "partials/navbar.css";
-@import "partials/slide.css";
-@import "partials/button.css";
-@import "partials/colors.css";
-@import "partials/elevation.css";
-@import "partials/side-tab.css";
-@import "partials/price.css";
+@import "./partials/theme.css";
+@import "./partials/reset.css";
+@import "./partials/navbar.css";
+@import "./partials/slide.css";
+@import "./partials/button.css";
+@import "./partials/colors.css";
+@import "./partials/elevation.css";
+@import "./partials/side-tab.css";
+@import "./partials/price.css";
 
 /* reset */
 * {
