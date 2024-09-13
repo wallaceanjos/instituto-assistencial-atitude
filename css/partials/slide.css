@@ -41,12 +41,12 @@
 }
 
 .backdrop-hero .flickity-button.flickity-prev-next-button.next {
-    background: url(/images/chevron_right.svg) no-repeat center center / contain;
+    background: url(./images/chevron_right.svg) no-repeat center center / contain;
     right: 10px;
 }
 
 .backdrop-hero .flickity-button.flickity-prev-next-button.previous {
-    background: url(/images/chevron_left.svg) no-repeat center center / contain;
+    background: url(./images/chevron_left.svg) no-repeat center center / contain;
     left: 10px;
 }
 
@@ -133,12 +133,12 @@
         border-radius: 0;
     }
 .comments .flickity-button.flickity-prev-next-button.next {
-    background: url(/images/next-comments.png) no-repeat center center / contain;
+    background: url(./images/next-comments.png) no-repeat center center / contain;
     right: 10px;
 }
 
 .comments .flickity-button.flickity-prev-next-button.previous {
-    background: url(/images/prev-comments.png) no-repeat center center / contain;
+    background: url(./images/prev-comments.png) no-repeat center center / contain;
     left: 10px;
 }
 
