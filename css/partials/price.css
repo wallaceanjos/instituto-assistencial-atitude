@@ -1,9 +1,9 @@
 .price-item {
+  aspect-ratio: 300/564;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   transition: all 300ms linear;
-  
 }
 .price-img1:hover,
 .price-img2:hover,
@@ -16,33 +16,41 @@
 }
 
 .price-img1 {
+  background-image: url('../../images/1cor.png');
   background-image: url('../../images/1.png');
 }
 
 .price-img1:hover {
+  background-image: url('../../images/1.png');
   background-image: url('../../images/1cor.png');
 }
 
 .price-img2 {
+  background-image: url('../../images/2cor.png');
   background-image: url('../../images/2.png');
 }
 
 .price-img2:hover {
+  background-image: url('../../images/2.png');
   background-image: url('../../images/2cor.png');
 }
 
 .price-img3 {
+  background-image: url('../../images/3cor.png');
   background-image: url('../../images/3.png');
 }
 
 .price-img3:hover {
+  background-image: url('../../images/3.png');
   background-image: url('../../images/3cor.png');
 }
 
 .price-img4 {
+  background-image: url('../../images/4cor.png');
   background-image: url('../../images/4.png');
 }
 
 .price-img4:hover {
+  background-image: url('../../images/4.png');
   background-image: url('../../images/4cor.png');
 }
