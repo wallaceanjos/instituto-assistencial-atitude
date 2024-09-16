@@ -58,11 +58,10 @@
                                         parceiras</a>
                                 </li>
                                 <li class="nav-link" style="--i: .7s">
-                                    <a href="#" class="lh-12 d-flex--force flex-nowrap h-56">loja<span
-                                            class="material-symbols-rounded">
-                                            arrow_drop_down
-                                        </span></a>
-                                    <div class="dropdown">
+                                    <a href="#" class="lh-12 d-flex--force flex-nowrap h-56">loja
+                                        <!-- <span class="material-symbols-rounded">arrow_drop_down</span> -->
+                                    </a>
+                                    <!-- <div class="dropdown">
                                         <ul>
                                             <li class="dropdown-link">
                                                 <a href="#" class="lh-12 d-flex--force flex-nowrap h-56">Link
@@ -144,17 +143,16 @@
 
                                             <div class="arrow"></div>
                                         </ul>
-                                    </div>
+                                    </div> -->
                                 </li>
                                 <li class="nav-link" style="--i: .8s">
                                     <a href="#" class="lh-12 d-flex--force flex-nowrap h-56">Contato</a>
                                 </li>
                                 <li class="nav-link" style="--i: .9s">
-                                    <a href="#" class="lh-12 d-flex--force flex-nowrap h-56">Blog<span
-                                            class="material-symbols-rounded">
-                                            arrow_drop_down
-                                        </span></a>
-                                    <div class="dropdown">
+                                    <a href="#" class="lh-12 d-flex--force flex-nowrap h-56">Blog
+                                        <!-- <span class="material-symbols-rounded">arrow_drop_down</span> -->
+                                    </a>
+                                    <!-- <div class="dropdown">
                                         <ul>
                                             <li class="dropdown-link">
                                                 <a href="#" class="lh-12 d-flex--force flex-nowrap h-56">Link
@@ -236,7 +234,7 @@
 
                                             <div class="arrow"></div>
                                         </ul>
-                                    </div>
+                                    </div> -->
                                 </li>
                             </ul>
                         </div>
@@ -731,16 +729,192 @@
             </div>
         </section>
         <!-- SECTION 8 -->
-        <section class="p-24">8</section>
+        <section class="py-64 background-bg">
+            <div class="max-w-1200 mx-auto sponsors">
+                <div class="text-center flex-column flex-align-center text-center px-16">
+                    <div class="lightblue h-8 w-184"></div>
+                    <h4 class="m-0 fw-700 fs-40 lh-40 mt-32 mb-16">Nossos Parceiros</h4>
+                    <p class="fs-18 lh-30 fw-500 mt-0 mb-64">Conheça as empresas que já abraçam a nossa causa.</p>
+                </div>
+                
+                <div class="carousel" data-flickity='{ "initialIndex": 2, "freeScroll": true, "pageDots": false, "contain": true }'>
+                    <div class="carousel-cell">
+                        <img class="carousel-cell-image"
+                        src="./images/sponsor_1.png"/>
+                    </div>
+                    <div class="carousel-cell">
+                        <img class="carousel-cell-image"
+                        src="./images/sponsor_2.png"/>
+                    </div>
+                    <div class="carousel-cell">
+                        <img class="carousel-cell-image"
+                        src="./images/sponsor_3.png"/>
+                    </div>
+                    <div class="carousel-cell">
+                        <img class="carousel-cell-image"
+                        src="./images/sponsor_4.png"/>
+                    </div>
+                    <div class="carousel-cell">
+                        <img class="carousel-cell-image"
+                        src="./images/sponsor_5.png"/>
+                    </div>
+                    <div class="carousel-cell">
+                        <img class="carousel-cell-image"
+                        src="./images/sponsor_1.png"/>
+                    </div>
+                    <div class="carousel-cell">
+                        <img class="carousel-cell-image"
+                        src="./images/sponsor_2.png"/>
+                    </div>
+                    <div class="carousel-cell">
+                        <img class="carousel-cell-image"
+                        src="./images/sponsor_3.png"/>
+                    </div>
+                    <div class="carousel-cell">
+                        <img class="carousel-cell-image"
+                        src="./images/sponsor_4.png"/>
+                    </div>
+                    <div class="carousel-cell">
+                        <img class="carousel-cell-image"
+                        src="./images/sponsor_5.png"/>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-center-center mt-64">
+                <a href="" class="lightblue b-0 fw-600 h-64 px-32 fs-24 cursor-pointer flex-center-center radius-full">Seja uma Empresa de Atitude</a>
+            </div>
+            
+        </section>
         <!-- SECTION 9 -->
-        <section class="p-24">9</section>
+        <section class="py-64 yellow">
+            <div class="max-w-1200 mx-auto">
+                <div class="text-center flex-column flex-align-center text-center px-16">
+                    <div class="background-surface h-8 w-184"></div>
+                    <h4 class="m-0 fw-700 fs-40 lh-40 mt-32 mb-16">Assine a nossa newsletter</h4>
+                    <p class="fs-18 lh-30 fw-500 mt-0 mb-64">Inscreva-se para receber as nossas notícias diretamente no seu e-mail.</p>
+                </div>
+                
+                <form id="newsletterForm" class="flex-column gap-16">
+                    <div class="newsletter-form-group flex-center-center">
+                        <input class="newsletter-input w-100-p max-w-700 radius-full b-0 h-48 fs-20 pl-24" type="text" id="name" name="name" placeholder="Nome" required>
+                    </div>
+                    <div class="newsletter-form-group flex-center-center">
+                        <input class="newsletter-input w-100-p max-w-700 radius-full b-0 h-48 fs-20 pl-24" type="email" id="email" name="email" placeholder="Email" required>
+                    </div>
+                    <div class="newsletter-form-group flex-center-center gap-16">
+                        <input class="newsletter-label" type="checkbox" id="consent" name="consent" required>
+                        <label class="newsletter-input" for="consent">Aceito receber comunicações do Instituto Assistencial Atitude via email.</label>
+                    </div>
+                    <div class="flex-center-center my-16">
+                        <button class="newsletter-button lightblue b-0 fw-600 h-64 px-32 fs-24 cursor-pointer flex-center-center radius-full min-w-200 text-center" type="submit">Enviar</button>
+                    </div>
+                </form>
+                
+            </div>
+        </section>
+        
+        
+        <section class="py-64 darkblue">
+            <div class="max-w-1200 mx-auto">
+                <div class="grid-3 mb-48">
+                    <div class="flex-column">
+                        <div class="logo mb-64">
+                            <a href="#">
+                                <div class="w-144 h-64"
+                                    style="background:url('./images/logo.png')no-repeat center center / contain">
+                                </div>
+                            </a>
+                        </div>
+                        
+                        <p class="fw-600">Siga-nos:</p>
+                        <div class="flex-row gap-12  mb-64">
+                            <div class="w-44 h-44" style="background:url(./images/social_fb.png)no-repeat center center / contain"></div>
+                            <div class="w-44 h-44" style="background:url(./images/social_insta.png)no-repeat center center / contain"></div>
+                            <div class="w-44 h-44" style="background:url(./images/social_yt.png)no-repeat center center / contain"></div>
+                            <div class="w-44 h-44" style="background:url(./images/social_in.png)no-repeat center center / contain"></div>
+                        </div>
+                        <p class="fw-600">
+                            Instituto Assistencial Atitude
+                        </p>
+                        <p class="fw-600">
+                            Rua Sylvio da Rocha Pollis, 751<br>
+                            Barra da Tijuca, Rio de Janeiro - RJ,<br>
+                            22793-395
+                        </p>
+                        <p class="fw-600">
+                            +55 21 97212-7201
+                        </p>
+                    </div>
+                    <div class="colspan-2">
+                        <div class="flex-column fs-12 fw-600">
+                            <div class="grid-md-4">
+                                <div class="flex-column">
+                                    <p>QUEM SOMOS</p>
+                                    <p class="my-8">O Instituto</p>
+                                    <p class="my-8">Equipe</p>
+                                    <p class="my-8">Conselho</p>
+                                    <p class="my-8">Trabalhe Conosco</p>
+                                </div>
+                                <div class="flex-column">
+                                    <p>O QUE FAZEMOS</p>
+                                    <p class="my-8">Como Impactamos</p>
+                                    <p class="my-8">Educação Infantil</p>
+                                    <p class="my-8">Recuperação Química</p>
+                                    <p class="my-8">Geração de Renda</p>
+                                    <p class="my-8">Socorro Emergencial</p>
+                                </div>
+                                <div class="flex-column">
+                                    <p>COMO AJUDAR</p>
+                                    <p class="my-8">Doações</p>
+                                    <p class="my-8">Apadrinhe uma criança</p>
+                                    <p class="my-8">Programa Padrinho Empresa</p>
+                                    <p class="my-8">Doação de Alimentos</p>
+                                    <p class="my-8">Seja um voluntário</p>
+                                    <p class="my-8">Outras formas de doar</p>
+                                </div>
+                                <div class="flex-column">
+                                    <p class="my-4">TRANSPARÊNCIA</p>
+                                    <p class="my-4">EMPRESAS PARCEIRAS</p>
+                                    <p class="my-4">LOJA</p>
+                                    <p class="my-4">CONTATO</p>
+                                    <p class="my-4">BLOG</p>
+                                    <p class="my-4">OUVIDORIA</p>
+                                    <p class="my-4">POLÍTICA DE PRIVACIDADE</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
 
 
     </main>
-    <script src="./js/toggle-theme.js"></script>
-    <script src="./js/navbar-scroll.js"></script>
-    <script src="./js/counter.js"></script>
-    <script src="./js/slide.js"></script>
+    <script>
+        document.getElementById('newsletterForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Previne o envio padrão do formulário
+
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const consent = document.getElementById('consent').checked;
+
+            if (name && email && consent) {
+                alert(`Obrigado por se inscrever, ${name}!`);
+                // Aqui você pode adicionar lógica para enviar os dados via AJAX, se necessário
+                this.reset(); // Limpa o formulário após o envio
+            } else {
+                alert('Por favor, preencha todos os campos e aceite os termos.');
+            }
+        });
+    </script>
+    <script type="text/javascript" src="./js/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="./js/jquery.scrollTo.min.js"></script>
+    <script type="text/javascript" src="./js/jquery.localScroll.min.js"></script>
+    <script type="text/javascript" src="./js/toggle-theme.js"></script>
+    <script type="text/javascript" src="./js/navbar-scroll.js"></script>
+    <script type="text/javascript" src="./js/counter.js"></script>
+    <script type="text/javascript" src="./js/slide.js"></script>
 
 </body>
 
