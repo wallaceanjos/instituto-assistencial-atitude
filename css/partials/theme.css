@@ -19,6 +19,7 @@
     --lightblue: #00aff5;
     --guava: #f4707c;
     --darkblue: #003755;
+    
 
     /* Tema Claro */
     --light-primary: #00aff5;
@@ -28,6 +29,7 @@
     --light-bg-alpha: var(--dk-contrast);
     --light-surface: #ffffff;
     --light-surface-alpha: #ffffff88;
+    --light-disabled: #dbdbdb;
 
     --light-active: var(--tomato);
     --light-level: #0318244d;
@@ -42,6 +44,7 @@
     --dark-bg-alpha: #1c1c1cc0;
     --dark-surface: #2e2e2e;
     --dark-surface-alpha: #2e2e2e88;
+    --dark-disabled: #272727;
 
     --dark-active: #00005e;
     --dark-level: #ffffff4d;

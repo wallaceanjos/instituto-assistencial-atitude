@@ -121,7 +121,7 @@
     margin-right: 16px;
 }
 .comments .flickity-viewport{
-    height: 100% !important;
+    /* height: 100% !important; */
     display: flex;
 }
 /* BUTTONS */
@@ -165,3 +165,7 @@
         width: 100px !important;
     }
 }
+
+/* -------------------------------------------------------------------------- */
+/* SPONSORS */
+/* -------------------------------------------------------------------------- */

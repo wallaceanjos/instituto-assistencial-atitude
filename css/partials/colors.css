@@ -22,6 +22,11 @@
     background: var(--darkblue);
     color: var(--dk-contrast)
 }
+
+.disabled {
+    background: light-dark(var(--light-disabled), var(--dark-disabled));
+    color: light-dark(var(--lt-contrast), var(--dk-contrast));
+}
 /*  BACKGROUNDS */
 .transparent {
     background: transparent;
