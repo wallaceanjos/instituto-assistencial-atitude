@@ -51,40 +51,40 @@ $footer_social_in = get_template_directory_uri() . '/images/social_in.png';
                 <div class="flex-column fs-12 fw-600 px-16 px-md-0">
                     <div class="grid-md-4 gap-16">
                         <div class="flex-column">
-                            <p><a href="/quem-somos" target="_blank">QUEM SOMOS</a></p>
-                            <p class="my-8"><a href="/quem-somos" target="_blank">O Instituto</a></p>
-                            <p class="my-8"><a href="/quem-somos" target="_blank">Equipe</a></p>
-                            <p class="my-8"><a href="/quem-somos" target="_blank">Conselho</a></p>
-                            <p class="my-8"><a href="/quem-somos" target="_blank">Trabalhe Conosco</a></p>
+                            <p><a href="/quem-somos" target="_self">QUEM SOMOS</a></p>
+                            <p class="my-8"><a href="/quem-somos" target="_self">O Instituto</a></p>
+                            <p class="my-8"><a href="/quem-somos" target="_self">Equipe</a></p>
+                            <p class="my-8"><a href="/quem-somos" target="_self">Conselho</a></p>
+                            <p class="my-8"><a href="/quem-somos" target="_self">Trabalhe Conosco</a></p>
                         </div>
                         <div class="flex-column">
-                        <p><a href="/o-que-fazemos" target="_blank">O QUE FAZEMOS</a></p>
-                            <p class="my-8"><a href="/tabs/" target="_blank">Como Impactamos</a></p>
-                            <p class="my-8"><a href="/category/educacao-infantil/" target="_blank">Educação Infantil</a></p>
-                            <p class="my-8"><a href="/category/recuperacao-quimica/" target="_blank">Recuperação Química</a></p>
-                            <p class="my-8"><a href="/category/geracao-de-renda/" target="_blank">Geração de Renda</a></p>
-                            <p class="my-8"><a href="/category/socorro-emergencial/" target="_blank">Socorro Emergencial</a></p>
-                            <p class="my-8"><a href="/category/entrega-de-alimentos/" target="_blank">Entrega de Alimentos</a></p>
-                            <p class="my-8"><a href="/category/atendimentos/" target="_blank">Atendimentos</a></p>
-                            <p class="my-8"><a href="/category/acessibilidade/" target="_blank">Acessibilidade</a></p>
-                            <p class="my-8"><a href="/category/transformacao/" target="_blank">TransformAcao</a></p>
+                        <p><a href="/o-que-fazemos" target="_self">O QUE FAZEMOS</a></p>
+                            <p class="my-8"><a href="/tabs/" target="_self">Como Impactamos</a></p>
+                            <p class="my-8"><a href="/category/educacao-infantil/" target="_self">Educação Infantil</a></p>
+                            <p class="my-8"><a href="/category/recuperacao-quimica/" target="_self">Recuperação Química</a></p>
+                            <p class="my-8"><a href="/category/geracao-de-renda/" target="_self">Geração de Renda</a></p>
+                            <p class="my-8"><a href="/category/socorro-emergencial/" target="_self">Socorro Emergencial</a></p>
+                            <p class="my-8"><a href="/category/entrega-de-alimentos/" target="_self">Entrega de Alimentos</a></p>
+                            <p class="my-8"><a href="/category/atendimentos/" target="_self">Atendimentos</a></p>
+                            <p class="my-8"><a href="/category/acessibilidade/" target="_self">Acessibilidade</a></p>
+                            <p class="my-8"><a href="/category/transformacao/" target="_self">TransformAcao</a></p>
                         </div>
                         <div class="flex-column">
-                            <p><a href="/como-ajudar" target="_blank">COMO AJUDAR</a></p>
-                            <p class="my-8"><a href="/como-ajudar" target="_blank">Apadrinhe uma criança</a></p>
-                            <p class="my-8"><a href="/como-ajudar" target="_blank">Programa Padrinho Empresa</a></p>
-                            <p class="my-8"><a href="/como-ajudar" target="_blank">Doação de Alimentos</a></p>
-                            <p class="my-8"><a href="/como-ajudar" target="_blank">Seja um voluntário</a></p>
-                            <p class="my-8"><a href="/como-ajudar" target="_blank">Outras formas de doar</a></p>
+                            <p><a href="/como-ajudar" target="_self">COMO AJUDAR</a></p>
+                            <p class="my-8"><a href="/como-ajudar" target="_self">Apadrinhe uma criança</a></p>
+                            <p class="my-8"><a href="/como-ajudar" target="_self">Programa Padrinho Empresa</a></p>
+                            <p class="my-8"><a href="/como-ajudar" target="_self">Doação de Alimentos</a></p>
+                            <p class="my-8"><a href="/como-ajudar" target="_self">Seja um voluntário</a></p>
+                            <p class="my-8"><a href="/como-ajudar" target="_self">Outras formas de doar</a></p>
                         </div>
                         <div class="flex-column">
-                            <p class="my-4"><a href="/transparencia" target="_blank">TRANSPARÊNCIA</a></p>
-                            <p class="my-4"><a href="/empresas-parceiras" target="_blank">EMPRESAS PARCEIRAS</a></p>
+                            <p class="my-4"><a href="/transparencia" target="_self">TRANSPARÊNCIA</a></p>
+                            <p class="my-4"><a href="/empresas-parceiras" target="_self">EMPRESAS PARCEIRAS</a></p>
                             <p class="my-4"><a href="https://www.atitudestore.com.br/" target="_blank">LOJA</a></p>
-                            <p class="my-4"><a href="/contato" target="_blank">CONTATO</a></p>
-                            <p class="my-4"><a href="/blog" target="_blank">BLOG</a></p>
-                            <p class="my-4"><a href="/ouvidoria" target="_blank">OUVIDORIA</a></p>
-                            <p class="my-4"><a href="/politica-de-privacidade" target="_blank">POLÍTICA DE PRIVACIDADE</a></p>
+                            <p class="my-4"><a href="/contato" target="_self">CONTATO</a></p>
+                            <p class="my-4"><a href="/blog" target="_self">BLOG</a></p>
+                            <p class="my-4"><a href="/ouvidoria" target="_self">OUVIDORIA</a></p>
+                            <p class="my-4"><a href="/politica-de-privacidade" target="_self">POLÍTICA DE PRIVACIDADE</a></p>
                         </div>
                     </div>
                 </div>
