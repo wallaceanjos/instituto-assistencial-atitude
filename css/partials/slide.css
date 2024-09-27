@@ -73,6 +73,10 @@
     justify-content: center;
 }
 
+.backdrop-hero .flickity-page-dots{
+    transform: translate(0, -60px);
+}
+
 @media screen and (min-width: 1440px) {
 
     .backdrop-hero .button--previous span,
@@ -96,8 +100,8 @@
 /* -------------------------------------------------------------------------- */
 
 .comments .carousel {
-    max-width: 1280px;
-    margin: 0 auto
+    /* max-width: 1280px; */
+    /* margin: 0 auto */
 }
 
 .comments .flickity-slider {
@@ -106,6 +110,24 @@
     justify-content: center;
     align-items: center;
 }
+
+.comments .flickity-viewport {
+    transition: all 0.2s;
+    width: 100%;
+    min-height: 644px !important;
+    display: flex;
+}
+@media screen and (min-width: 1024px) {
+    .comments .flickity-viewport {
+        min-height: 540px !important;
+    }
+}
+@media screen and (min-width: 1440px) {
+    .comments .flickity-viewport {
+        min-height: 440px !important;
+    }
+}
+
 
 .comments .carousel-cell.is-selected {
     opacity: 1;
@@ -120,11 +142,6 @@
     max-width: 600px;
     opacity: .5;
     margin-right: 16px;
-}
-
-.comments .flickity-viewport {
-    /* height: 100% !important; */
-    display: flex;
 }
 
 /* BUTTONS */
@@ -194,8 +211,8 @@
 }
 
 .sponsors .flickity-viewport {
-    max-width: 1000px;
-    margin: 0 auto;
+    /* max-width: 1000px; */
+    /* margin: 0 auto; */
 }
 
 

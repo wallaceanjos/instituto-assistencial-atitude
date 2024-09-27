@@ -3,15 +3,19 @@
     position: fixed;
     top: 0;
     width: 100%;
-    padding:32px 0;
-    background-color: transparent;
-    transition: all 0.3s ease; /* Transição suave */
-    z-index: 1000; /* Garante que a navbar fique sobre outros elementos */
+    padding: 32px 0;
+    background: linear-gradient(180deg, var(--darkblue), transparent);
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+.nav-link > a:hover{
+    color: var(--yellow);
 }
 
 /* Cor da navbar ao rolar a página */
 .navbar.scrolled {
-    background-color: var(--dark-primary);
+    background: light-dark(var(--darkblue), var(--darkblue-900));
     padding: 8px 0;
 }
 

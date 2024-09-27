@@ -1,0 +1,41 @@
+/* Estiliza apenas inputs de texto e textarea */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="url"],
+input[type="password"],
+input[type="number"],
+input[type="search"],
+textarea {
+    width: 100%;
+    padding: 12px 24px;
+    background-color: var(--light-bg);
+    color: var(--light-fg);
+    border: 0px solid #ccc;
+    border-radius: 16px;
+    outline: none;
+    box-shadow: none;
+    transition: border-color 0.3s ease;
+    font-size: 20px;
+    min-height: 48px; /* Mantém a altura dos inputs de texto */
+    resize: none;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="search"]:focus,
+textarea:focus {
+    border-color: #999;
+    outline: none;
+}
+
+/* Estiliza apenas Contact Form 7 */
+.wpcf7-spinner {
+    position: absolute;
+    margin: 40px;
+    transform: translate(-150px, 63px);
+}

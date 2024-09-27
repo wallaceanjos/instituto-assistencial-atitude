@@ -1,38 +1,51 @@
 @import "./partials/theme.css";
-@import "./partials/reset.css";
 @import "./partials/navbar.css";
 @import "./partials/slide.css";
 @import "./partials/button.css";
+@import "./partials/forms.css";
 @import "./partials/colors.css";
 @import "./partials/elevation.css";
 @import "./partials/side-tab.css";
+@import "./partials/sponsors.css";
 @import "./partials/price.css";
+@import "./partials/line-icons.css";
+@import "./partials/animate.css";
 
 /* reset */
 * {
     box-sizing: border-box;
 }
 
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-color: light-dark(var(--light-bg), var(--dark-bg));
+    color: light-dark(var(--light-fg), var(--dark-fg));
+    overflow-x: hidden;
+}
+
 body {
     font-family: "Open Sans", sans-serif;
 }
 
+
 ul {
     list-style: none;
-    padding:0;
+    padding: 0;
 }
 
 a {
+    color: inherit;
     text-decoration: none;
 }
 
+a:hover {
+    color: inherit;
+}
 
-html,
-body {
-    margin:0;
-    padding: 0;
-    background-color: light-dark(var(--light-bg), var(--dark-bg));
-    color: light-dark(var(--light-fg), var(--dark-fg));
+a:active {
+    color: inherit;
 }
 
 .overlay{

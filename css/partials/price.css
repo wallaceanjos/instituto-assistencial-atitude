@@ -1,8 +1,4 @@
 .price-item {
-  aspect-ratio: 300/564;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   transition: all 300ms linear;
 }
 .price-img1:hover,
@@ -16,41 +12,70 @@
 }
 
 .price-img1 {
-  background-image: url('../../images/1cor.png');
-  background-image: url('../../images/1.png');
+  background: url('../../images/1.png')no-repeat top center / cover;
 }
 
 .price-img1:hover {
-  background-image: url('../../images/1.png');
-  background-image: url('../../images/1cor.png');
+  background: url('../../images/1cor.png')no-repeat top center / cover;
 }
 
 .price-img2 {
-  background-image: url('../../images/2cor.png');
-  background-image: url('../../images/2.png');
+  background: url('../../images/2.png')no-repeat top center / cover;
 }
 
 .price-img2:hover {
-  background-image: url('../../images/2.png');
-  background-image: url('../../images/2cor.png');
+  background: url('../../images/2cor.png')no-repeat top center / cover;
 }
 
 .price-img3 {
-  background-image: url('../../images/3cor.png');
-  background-image: url('../../images/3.png');
+  background: url('../../images/3.png')no-repeat top center / cover;
 }
 
 .price-img3:hover {
-  background-image: url('../../images/3.png');
-  background-image: url('../../images/3cor.png');
+  background: url('../../images/3cor.png')no-repeat top center / cover;
 }
 
 .price-img4 {
-  background-image: url('../../images/4cor.png');
-  background-image: url('../../images/4.png');
+  background: url('../../images/4.png')no-repeat top center / cover;
 }
 
 .price-img4:hover {
-  background-image: url('../../images/4.png');
-  background-image: url('../../images/4cor.png');
+  background: url('../../images/4cor.png')no-repeat top center / cover;
+}
+
+/* Pré-carregar imagens de hover */
+.preload-images {
+  display: none;
+  background-image: url('../../images/1cor.png'),
+                    url('../../images/2cor.png'),
+                    url('../../images/3cor.png'),
+                    url('../../images/4cor.png');
+}
+
+
+.price-item .price-value span.fw-900 {
+  font-size: 36vw;
+}
+@media screen and (min-width: 600px) {
+  .price-item .price-value span.fw-900 {
+      font-size:100px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .price-item .price-value span.fw-900 {
+      font-size:110px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .price-item .price-value span.fw-900{
+      font-size:110px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .price-item{
+    aspect-ratio: 300/564;
+  }
+  .price-item .price-value span.fw-900{
+      font-size:150px;
+  }
 }

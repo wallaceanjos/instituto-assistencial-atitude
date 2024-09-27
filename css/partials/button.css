@@ -1,12 +1,43 @@
-.btn{
+/* General button style (reset) */
+.btn {
+    border: none;
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background: none;
+    cursor: pointer;
+    padding: 16px 64px;
     display: inline-block;
-    padding: .5rem 1.3rem;
-    font-size: 14px;
-    border-radius: 2rem;
-    line-height: 1;
-    margin: 0 .2rem;
-    transition: var(--transition);
     text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    outline: none;
+    position: relative;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.btn:after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+/* Pseudo elements for icons */
+.btn:before {
+    font-family: 'icomoon';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    position: relative;
+    -webkit-font-smoothing: antialiased;
 }
 
 .btn.solid,
@@ -21,3 +52,554 @@
     color: light-dark(var(--light-fg), var(--dark-fg));
 }
 
+
+.btn-icon-before:before {
+    content: "♥";
+}
+.btn-icon-after:after {
+    content: "☻";
+}
+
+
+/* Button 2 */
+.btn-3d {
+    box-shadow: 0 6px var(--shadow-color);
+    -webkit-transition: none;
+    -moz-transition: none;
+    transition: none;
+}
+
+/* Button 2c */
+.btn-3d-down {
+    border-radius: 5px;
+}
+
+.btn-3d-down:hover {
+    box-shadow: 0 4px var(--shadow-color);
+    top: 2px;
+}
+
+.btn-3d-down:active {
+    box-shadow: 0 0 var(--shadow-color);
+    top: 6px;
+}
+
+/* Button 2d */
+.btn-3d-up {
+    border-radius: 5px;
+}
+
+.btn-3d-up:hover {
+    box-shadow: 0 8px var(--shadow-color);
+    top: -2px;
+}
+
+.btn-3d-up:active {
+    box-shadow: 0 0 var(--shadow-color);
+    top: 6px;
+}
+
+/* Button 2g */
+.btn-3d-pill {
+    border-radius: 40px;
+}
+
+.btn-3d-pill:hover {
+    box-shadow: 0 4px var(--shadow-color);
+    top: 2px;
+}
+
+.btn-3d-pill:active {
+    box-shadow: 0 0 var(--shadow-color);
+    top: 6px;
+}
+
+/* Button 2h */
+.btn-3d-round {
+    border-radius: 20px;
+}
+
+.btn-3d-round:hover {
+    box-shadow: 0 4px var(--shadow-color);
+    top: 2px;
+}
+
+.btn-3d-round:active {
+    box-shadow: 0 0 var(--shadow-color);
+    top: 6px;
+}
+
+/* Button 2i */
+.btn-3d-disc-down {
+    border-radius: 999px;
+    width: 64px;
+    height: 64px;
+    padding: 0;
+}
+
+.btn-3d-disc-down:hover {
+    box-shadow: 0 4px var(--shadow-color);
+    top: 2px;
+}
+
+.btn-3d-disc-down:active {
+    box-shadow: 0 0 var(--shadow-color);
+    top: 6px;
+}
+
+/* Button 2j */
+.btn-3d-disc-up {
+    border-radius: 999px;
+    width: 64px;
+    height: 64px;
+    padding: 0;
+}
+
+.btn-3d-disc-up:hover {
+    box-shadow: 0 8px var(--shadow-color);
+    top: -2px;
+}
+
+.btn-3d-disc-up:active {
+    box-shadow: 0 0 var(--shadow-color);
+    top: 6px;
+}
+
+/* Button 3 */
+.btn-flat {
+    background: var(--bg-color);
+    color: var(--fg-color);
+}
+
+.btn-flat:hover {
+    filter: brightness(0.95);
+}
+
+.btn-flat:active {
+    filter: brightness(0.8);
+    top: 2px;
+}
+
+.btn-flat:before {
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    line-height: 3;
+    font-size: 140%;
+    width: 60px;
+}
+
+/* Button 3a */
+.btn-flat-icon-left {
+    padding: 25px 60px 25px 120px;
+}
+
+.btn-flat-icon-left:before {
+    background: rgba(0, 0, 0, 0.05);
+}
+
+/* Button 3b */
+.btn-flat-icon-pipe {
+    padding: 25px 60px 25px 120px;
+    border-radius: 10px;
+}
+
+.btn-flat-icon-pipe:before {
+    border-right: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+/* Button 3c */
+.btn-flat-mark {
+    padding: 80px 20px 20px 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px var(--shadow-color);
+}
+
+.btn-flat-mark:active {
+    /* box-shadow: 0 3px #dc7801; */
+}
+
+.btn-flat-mark:before {
+    height: 60px;
+    width: 100%;
+    line-height: 60px;
+    background: #fff;
+    color: var(--bg-color);
+    border-radius: 10px 10px 0 0;
+}
+
+.btn-flat-mark:active:before {
+    color: var(--shadow-color);
+}
+
+/* Button 3d */
+.btn-flat-tag {
+    padding: 25px 60px 25px 120px;
+    border-radius: 10px;
+}
+
+.btn-flat-tag:before {
+    background: #fff;
+    color: var(--bg-color);
+    z-index: 2;
+    border-radius: 10px 0 0 10px;
+}
+
+.btn-flat-tag:after {
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    z-index: 1;
+    left: 55px;
+    top: 50%;
+    margin: -10px 0 0 -10px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.btn-flat-tag:active:before {
+    color: var(--shadow-color);
+}
+
+.btn-flat-tag:active {
+    top: 0;
+}
+
+.btn-flat-tag:active:after {
+    left: 60px;
+}
+
+/* Button 3e */
+.btn-flat-icon-right {
+    padding: 25px 120px 25px 60px;
+    overflow: hidden;
+}
+
+.btn-flat-icon-right:before {
+    left: auto;
+    right: 10px;
+    z-index: 2;
+}
+
+.btn-flat-icon-right:after {
+    width: 30%;
+    height: 200%;
+    background: rgba(255, 255, 255, 0.1);
+    z-index: 1;
+    right: 0;
+    top: 0;
+    margin: -5px 0 0 -5px;
+    -webkit-transform-origin: 0 0;
+    -webkit-transform: rotate(-20deg);
+    -moz-transform-origin: 0 0;
+    -moz-transform: rotate(-20deg);
+    -ms-transform-origin: 0 0;
+    -ms-transform: rotate(-20deg);
+    transform-origin: 0 0;
+    transform: rotate(-20deg);
+}
+
+.btn-flat-icon-right:hover:after {
+    width: 40%;
+}
+
+/* Button 4 */
+.btn-outlined {
+    background: transparent !important;
+    border-radius: 50px;
+    border: 3px solid #fff;
+    color: #fff;
+    overflow: hidden;
+}
+
+.btn-outlined:active {
+    border-color: var(--bg-color);
+    color: var(--bg-color);
+}
+
+.btn-outlined:hover {
+    background: transparent;
+}
+
+.btn-outlined:before {
+    position: absolute;
+    height: 100%;
+    font-size: 24px;
+    line-height: 56px;
+    color: #fff;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.btn-outlined:active:before {
+    color: var(--bg-color);
+}
+
+/* Button 4a */
+.btn-outlined-from-right:before {
+    left: calc(100% + 42px);
+    top: 0;
+}
+
+.btn-outlined-from-right:hover:before {
+    left: calc(100% - 42px);
+}
+
+/* Button 4b */
+.btn-outlined-from-left:before {
+    left: calc(0% - 42px);
+    top: 0;
+}
+
+.btn-outlined-from-left:hover:before {
+    left: calc(0% + 28px);
+}
+
+/* Button 4c */
+.btn-outlined-to-right:before {
+    left: calc(50%);
+    opacity: 0;
+    top: 0;
+}
+
+.btn-outlined-to-right:hover:before {
+    left: calc(100% - 42px);
+    opacity: 1;
+}
+
+/* Button 4d */
+.btn-outlined-to-left:before {
+    left: calc(50%);
+    opacity: 0;
+    top: 0;
+}
+
+.btn-outlined-to-left:hover:before {
+    left: calc(0% + 28px);
+    opacity: 1;
+}
+
+/* Button 5 */
+.btn-swipe{
+    background: var(--bg-color);
+    color: var(--fg-color);
+    height: 70px;
+    min-width: 260px;
+    line-height: 24px;
+    font-size: 16px;
+    overflow: hidden;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.btn-swipe:active {
+    background: var(--shadow-color);
+    top: 2px;
+}
+
+.btn-swipe span {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    -webkit-transition: all 0.3s;
+    -webkit-backface-visibility: hidden;
+    -moz-transition: all 0.3s;
+    -moz-backface-visibility: hidden;
+    transition: all 0.3s;
+    backface-visibility: hidden;
+}
+
+.btn-swipe:before {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    line-height: 2.5;
+    font-size: 180%;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.btn-swipe:active:before {
+    color: var(--bg-color);
+}
+
+/* Button 5a */
+.btn-swipe-down:hover span {
+    -webkit-transform: translateY(300%);
+    -moz-transform: translateY(300%);
+    -ms-transform: translateY(300%);
+    transform: translateY(300%);
+}
+
+.btn-swipe-down:before {
+    left: 0;
+    top: -100%;
+}
+
+.btn-swipe-down:hover:before {
+    top: 0;
+}
+
+/* Button 5b */
+.btn-swipe-side:hover span {
+    -webkit-transform: translateX(200%);
+    -moz-transform: translateX(200%);
+    -ms-transform: translateX(200%);
+    transform: translateX(200%);
+}
+
+.btn-swipe-side:before {
+    left: -100%;
+    top: 0;
+}
+
+.btn-swipe-side:hover:before {
+    left: 0;
+}
+
+/* Button 6 */
+.btn-styled{
+    color: var(--fg-color);
+    background: var(--bg-color);
+    -webkit-transition: none;
+    -moz-transition: none;
+    transition: none;
+}
+
+.btn-styled:active {
+    top: 2px;
+}
+
+/* Button 6a */
+.btn-styled-solid {
+    border: 4px solid var(--bg-color);
+}
+
+.btn-styled-solid:hover {
+    background: transparent;
+    color: var(--bg-color);
+}
+
+/* Button 6b */
+.btn-styled-solid-rounded {
+    border: 4px solid var(--bg-color);
+    border-radius: 15px;
+}
+
+.btn-styled-solid-rounded:hover {
+    background: transparent;
+    color: var(--bg-color);
+}
+
+/* Button 6c */
+.btn-styled-solid-pill {
+    border: 4px solid var(--bg-color);
+    border-radius: 60px;
+}
+
+.btn-styled-solid-pill:hover {
+    background: transparent;
+    color: var(--bg-color);
+}
+
+/* Button 6d */
+.btn-styled-dashed {
+    border: 2px dashed var(--bg-color);
+}
+
+.btn-styled-dashed:hover {
+    background: transparent;
+    color: var(--bg-color);
+}
+
+/* Button 6e */
+.btn-styled-dashed-rounded {
+    border: 2px dashed var(--bg-color);
+    border-radius: 15px;
+}
+
+.btn-styled-dashed-rounded:hover {
+    background: transparent;
+    color: var(--bg-color);
+}
+
+/* Button 6f */
+.btn-styled-dashed-pill {
+    border: 2px dashed var(--bg-color);
+    border-radius: 60px;
+}
+
+.btn-styled-dashed-pill:hover {
+    background: transparent;
+    color: var(--bg-color);
+}
+
+/* Button 6g */
+.btn-styled-dotted {
+    border: 2px dotted var(--bg-color);
+}
+
+.btn-styled-dotted:hover {
+    background: transparent;
+    color: var(--bg-color);
+}
+
+/* Button 6h */
+.btn-styled-dotted-rounded {
+    border: 2px dotted var(--bg-color);
+    border-radius: 15px;
+}
+
+.btn-styled-dotted-rounded:hover {
+    background: transparent;
+    color: var(--bg-color);
+}
+
+/* Button 6i */
+.btn-styled-dotted-pill {
+    border: 2px dotted var(--bg-color);
+    border-radius: 60px;
+}
+
+.btn-styled-dotted-pill:hover {
+    background: transparent;
+    color: var(--bg-color);
+}
+
+/* Button 6j */
+.btn-styled-double {
+    border: 4px double var(--bg-color);
+}
+
+.btn-styled-double:hover {
+    background: transparent;
+    color: var(--bg-color);
+}
+
+/* Button 6k */
+.btn-styled-double-rounded {
+    border: 4px double var(--bg-color);
+    border-radius: 15px;
+}
+
+.btn-styled-double-rounded:hover {
+    background: transparent;
+    color: var(--bg-color);
+}
+
+/* Button 6l */
+.btn-styled-double-pill {
+    border: 4px double var(--bg-color);
+    border-radius: 60px;
+}
+
+.btn-styled-double-pill:hover {
+    background: transparent;
+    color: var(--bg-color);
+}

@@ -9,7 +9,6 @@
 .tab-input,
 .tab-content {
   clear: both;
-  padding-top: 10px;
   display: none;
 }
 
@@ -17,27 +16,9 @@
   display: block;
   float: left;
   background: transparent;
-  color: var(--lt-contrast);
   border-color: var(--lightblue) !important;
 }
 
-#tab1:checked ~ .tab-navigation-panel .tab-label[for="tab1"],
-#tab2:checked ~ .tab-navigation-panel .tab-label[for="tab2"],
-#tab3:checked ~ .tab-navigation-panel .tab-label[for="tab3"],
-#tab4:checked ~ .tab-navigation-panel .tab-label[for="tab4"] {
-  background: var(--lightblue);
-  color: var(--dk-contrast);
-  border-color: var(--lightblue);
-}
-
-#tab1:checked ~ .tab-content-wrapper #content1,
-#tab2:checked ~ .tab-content-wrapper #content2,
-#tab3:checked ~ .tab-content-wrapper #content3,
-#tab4:checked ~ .tab-content-wrapper #content4 {
-  display: block;
-  background: light-dark(var(--light-surface), var(--dark-surface));
-  color: light-dark(var(--light-fg), var(--dark-fg));
-}
 
 .tab_container .tab-content p,
 .tab_container .tab-content h3 {

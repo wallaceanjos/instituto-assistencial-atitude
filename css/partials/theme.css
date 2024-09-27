@@ -1,30 +1,83 @@
 :root {
     color-scheme: light dark;
     /*
-  #3c3c3c
-  #003755
-  #f5c31e
-  #00aff5
-  #ff6847
-  #edebe6
-  #f7f5f1
-  #ffffff
-  
+    #3c3c3c
+    
+    --darkblue-50: #588094;
+    --darkblue: #003755;
+    --darkblue-900: #0f3144;
+    
+    --lightblue-50: #81c6cc;
+    --lightblue: #00aff5;
+    --lightblue-900: #005f7f;
+    
+    --yellow-50: #ffdb8f;
+    --yellow: #f5c31e;
+    --yellow-900: #91761d;
+    
+    --tomato-50: #f7a693;
+    --tomato: #ff6847;
+    --tomato-900: #a33a2a;
+    
+    --guava-50: #f3a7ae;
+    --guava: #f4707c;
+    --guava-900: #ac4951;
+    
+    --green-50: #88c4a3;
+    --green: #2ac56c;
+    --green-900: #36794d;
+    
+    #1c1c1c
+    #2e2e2e
+    #3c3c3c
+    
+    
+    #edebe6
+    #f7f5f1
+    #ffffff
   */
-    --lt-contrast: #1c1c1c;
-    --dk-contrast: #f7f5f1;
+
+    --darkblue: #003755;
+    --darkblue-50: #588094;
+    --darkblue-900: #0f3144;
+
+    --lightblue: #00aff5;
+    --lightblue-50: #86d9fa;
+    --lightblue-900: #0e83cd;
 
     --yellow: #f5c31e;
+    --yellow-50: #ffdb8f;
+    --yellow-900: #c49c19;
+
     --tomato: #ff6847;
-    --lightblue: #00aff5;
+    --tomato-50: #f7a693;
+    --tomato-900: #a33a2a;
+
     --guava: #f4707c;
-    --darkblue: #003755;
+    --guava-50: #f3a7ae;
+    --guava-900: #ac4951;
+
+    --green: #2ac56c;
+    --green-50: #88c4a3;
+    --green-900: #36794d;
+    
+    --dark: #2e2e2e;
+    --dark-50: #3c3c3c;
+    --dark-900: #1c1c1c;
+    
+    --light: #f7f5f1;
+    --light-50: #ffffff;
+    --light-900: #edebe6;
+    
+    --lt-contrast: var(--dark);
+    --dk-contrast: var(--light);
     
 
+
     /* Tema Claro */
-    --light-primary: #00aff5;
+    --light-primary: var(--lightblue);
     --light-accent: var(--yellow);
-    --light-fg: #3c3c3c;
+    --light-fg: var(--lt-contrast);
     --light-bg: #edebe6;
     --light-bg-alpha: var(--dk-contrast);
     --light-surface: #ffffff;
@@ -53,14 +106,21 @@
 
     /* Transição */
     --transition: 0.1s;
+
+    /* Sombra */
+    --shadow-color: var(--dark-bg);
+
+    /* Background */
+    --bg-color: var(--light-bg);
+    /* Cor */
+    --fg-color: var(--light-fg);
 }
 
-
-.light {
+.light-theme {
     color-scheme: light;
 }
 
-.dark {
+.dark-theme {
     color-scheme: dark;
 }
 

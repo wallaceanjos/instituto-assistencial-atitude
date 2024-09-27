@@ -1,0 +1,7 @@
+.sponsor .category a{
+  color: var(--light-fg);
+}
+
+.sponsor-thumbnail{
+  border-radius:16px;
+}
