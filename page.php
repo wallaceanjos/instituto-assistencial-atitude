@@ -3,14 +3,15 @@ get_header();
 ?>
 
 
-
-<!-- Content -->
+<!-- Post Meta -->
 <?php
 $thumbnail_url = get_the_post_thumbnail_url($post->ID, 'full');
+$no_title = get_post_meta(get_the_ID(), '_no_title_checkbox', true);
 $alternative_title = get_post_meta(get_the_ID(), '_alternative_title', true);
 ?>
-<!-- /Content -->
+<!-- /Post Meta -->
 
+<!-- Home Section -->
 <section class="flex-column background-surface color-white">
     <div class="w-100-p py-64 min-h-400" style="background: url(
                 <?php
@@ -21,60 +22,31 @@ $alternative_title = get_post_meta(get_the_ID(), '_alternative_title', true);
                 }
                 ?>) fixed no-repeat center center / cover; box-shadow: 0 200px 130px -100px var(--darkblue) inset">
         <div class="max-w-1200 mx-auto px-16 px-md-24">
-            <div class="grid-md-12 pt-64 my-64">
-                <div class="colspan-8">
 
-                    <div class="d-flex flex-column max-w-600 text-shadow">
-                        <span class="d-flex w-72 h-12 yellow radius-16 mb-16"></span>
-                        <h4 class="m-0 fw-600 fs-20">Instituto Assistencial Atitude</h4>
-                        <div class="h-48 h-md-64"></div>
-                        <?php
-                        if (empty($no_title)) {
+            <div class="flex-center-center">
+                <div class="d-flex flex-column flex-center-center w-100-p max-w-600 min-h-600 text-shadow text-center">
+                    <?php
+                    if (empty($no_title)) {
+                        ?>
+                        <h2 class="m-0 fs-28 lh-32 fs-md-40 lh-md-50">
+                            <?php
+                            if (!empty($alternative_title)) {
+                                echo esc_html($alternative_title);
+                            } else {
+                                the_title();
+                            }
                             ?>
-                            <h2 class="m-0 fs-28 lh-32 fs-md-40 lh-md-50">
-                                <?php
-                                if (!empty($alternative_title)) {
-                                    echo esc_html($alternative_title);
-                                } else {
-                                    the_title();
-                                }
-                                ?>
-                            </h2>
-                        <?php } ?>
-                        <p class="fw-500 fs-18 mb-36 max-w-500">
-                            <?php echo get_the_date(); ?>
-                            <span> | </span>
-                            <?php echo get_post_type(); ?>
-                        </p>
-                        <?php if (the_excerpt() != ''){ ?>
-                        <p class="fw-500 fs-18 mb-36 max-w-500">
-                            <?php echo the_excerpt(); ?>
-                        </p>
-                        <?php } ?>
-                    </div>
-
-                </div>
-
-                <div class="colspan-4">
-                    <style>
-                        .mod-breadcrumbs>a {
-                            padding: 4px 16px;
-                            background: var(--yellow);
-                            color: var(--lt-contrast);
-                            border-radius: 8px;
-                        }
-                    </style>
-                    <div class="mod-breadcrumbs font-alt align-right">
-                        <?php get_breadcrumb(); ?>
-                    </div>
-
+                        </h2>
+                    <?php } ?>
                 </div>
             </div>
+
+
         </div>
     </div>
 </section>
-<?php
 
+<?php
 // Início do Loop WordPress
 while (have_posts()):
     the_post();
