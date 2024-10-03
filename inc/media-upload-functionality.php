@@ -58,7 +58,7 @@ function custom_image_metabox_scripts() {
     global $post_type;
     if( 'page' == $post_type ) {  // ou use o post type que quiser
         wp_enqueue_media();
-        wp_enqueue_script('custom-image-metabox', get_template_directory_uri() . '/js/media-upload-functionality.js', array('jquery'), null, true);
+        wp_enqueue_script('custom-image-metabox', get_template_directory_uri() . '/inc/js/media-upload-functionality.js', array('jquery'), null, true);
     }
 }
 add_action('admin_enqueue_scripts', 'custom_image_metabox_scripts');

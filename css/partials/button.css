@@ -489,7 +489,7 @@
 /* Button 6b */
 .btn-styled-solid-rounded {
     border: 4px solid var(--bg-color);
-    border-radius: 15px;
+    border-radius: 16px;
 }
 
 .btn-styled-solid-rounded:hover {
@@ -521,7 +521,7 @@
 /* Button 6e */
 .btn-styled-dashed-rounded {
     border: 2px dashed var(--bg-color);
-    border-radius: 15px;
+    border-radius: 16px;
 }
 
 .btn-styled-dashed-rounded:hover {
@@ -553,7 +553,7 @@
 /* Button 6h */
 .btn-styled-dotted-rounded {
     border: 2px dotted var(--bg-color);
-    border-radius: 15px;
+    border-radius: 16px;
 }
 
 .btn-styled-dotted-rounded:hover {
@@ -585,7 +585,7 @@
 /* Button 6k */
 .btn-styled-double-rounded {
     border: 4px double var(--bg-color);
-    border-radius: 15px;
+    border-radius: 16px;
 }
 
 .btn-styled-double-rounded:hover {

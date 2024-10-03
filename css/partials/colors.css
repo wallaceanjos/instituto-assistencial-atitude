@@ -277,6 +277,14 @@
     --bg-color: light-dark(var(--light-900), var(--dark-900));
     --fg-color: light-dark(var(--lt-contrast), var(--dk-contrast));
 }
+.white{
+    --bg-color: var(--dk-contrast);
+    --fg-color: var(--lt-contrast);
+}
+.black{
+    --bg-color: var(--lt-contrast);
+    --fg-color: var(--dk-contrast);
+}
 
 
 

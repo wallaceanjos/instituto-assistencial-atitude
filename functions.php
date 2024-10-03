@@ -4,8 +4,9 @@ require_once get_template_directory() . '/inc/slider-functionality.php';
 require_once get_template_directory() . '/inc/tabs-functionality.php';
 require_once get_template_directory() . '/inc/reviews-functionality.php';
 require_once get_template_directory() . '/inc/sponsor-functionality.php';
-require_once get_template_directory() . '/inc/media-upload-functionality.php';
 require_once get_template_directory() . '/inc/events-functionality.php';
+require_once get_template_directory() . '/inc/alternative-title-functionality.php';
+require_once get_template_directory() . '/inc/dynamic-content-sections-functionality.php';
 
 function add_custom_post_types_to_category($query) {
     if (is_category() && $query->is_main_query() && !is_admin()) {
