@@ -47,6 +47,14 @@ $footer_social_in = get_template_directory_uri() . '/images/social_in.png';
                     +55 21 97212-7201
                 </p>
             </div>
+            <?php
+wp_nav_menu(
+    array(
+        'theme_location' => 'footer-menu',
+        'menu_class'     => 'footer-menu-class'
+    )
+);
+?>
             <div class="colspan-2">
                 <div class="flex-column fs-12 fw-600 px-16 px-md-0">
                     <div class="grid-md-4 gap-16">

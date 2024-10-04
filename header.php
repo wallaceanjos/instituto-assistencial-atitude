@@ -53,125 +53,25 @@
                     <input type="checkbox" name="" id="check">
                     <div class="nav-btn gap-md-24">
                         <div class="nav-links flex-md-center-center">
-                        <ul class="gap-24 text-uppercase m-0">
+                            <?php
+                            wp_nav_menu(
+                                array(
+                                    'theme_location' => 'header-menu',
+                                    'menu_class'     => 'header-menu-class',
+                                    'container'      => 'div', // Pode envolver com uma div se necessário
+                                    'container_class'=> 'nav-links flex-md-center-center', // Classe da div que envolve o menu
+                                    'items_wrap'     => '<ul class="gap-24 text-uppercase m-0">%3$s</ul>', // Envolve os itens do menu
+                                    'depth'          => 4, // Define a profundidade do menu (2 para dois níveis)
+                                    'walker'         => new Custom_Walker_Nav_Menu() // Define a classe do Walker
+                                )
+                            );
+                            ?>
                             
-                            <li class="nav-link local-scroll" style="--i: .1s">
-                                <a href="/" class="lh-12 d-flex--force flex-nowrap h-56">Home</a>
-                            </li>
-                            <li class="nav-link" style="--i: .2s">
-                                <a href="/quem-somos" class="lh-12 d-flex--force flex-nowrap h-56">Quem somos</a>
-                            </li>
-                            <li class="nav-link" style="--i: .3s">
-                                <a href="/o-que-fazemos" class="lh-12 d-flex--force flex-nowrap h-56">O que fazemos</a>
-                            </li>
-                            <li class="nav-link" style="--i: .4s">
-                                <a href="/como-ajudar" class="lh-12 d-flex--force flex-nowrap h-56">como ajudar</a>
-                            </li>
-                            <li class="nav-link" style="--i: .5s">
-                                <a href="/transparencia" class="lh-12 d-flex--force flex-nowrap h-56">Transparência</a>
-                            </li>
-                            <li class="nav-link" style="--i: .6s">
-                                <a href="/empresas-parceiras" class="lh-12 d-flex--force flex-nowrap h-56">Empresas
-                                    parceiras</a>
-                            </li>
-                            <li class="nav-link" style="--i: .7s">
-                                <a href="https://www.atitudestore.com.br/" target="_blank" class="lh-12 d-flex--force flex-nowrap h-56">loja
-                                </a>
-                            </li>
-                            <li class="nav-link" style="--i: .8s">
-                                <a href="/contato" class="lh-12 d-flex--force flex-nowrap h-56">Contato</a>
-                            </li>
-                            <li class="nav-link" style="--i: .9s">
-                                <a href="javascript:void(0)" class="lh-12 d-flex--force flex-nowrap h-56">Blog
-                                    <span class="material-symbols-rounded">arrow_drop_down</span>
-                                </a>
-                                <div class="dropdown">
-                                    <ul>
-                                        <li class="dropdown-link">
-                                            <a href="blog/category/creche-novos-sonhos/" class="lh-12 d-flex--force flex-nowrap h-56">Creche Novos Sonhos</a>
-                                        </li>
-                                        <li class="dropdown-link">
-                                            <a href="/blog" class="lh-12 d-flex--force flex-nowrap h-56">Todos os posts</a>
-                                        </li>
-
-                                        <!-- <li class="dropdown-link">
-                                            <a href="#" class="lh-12 d-flex--force flex-nowrap h-56">Link
-                                                2</a>
-                                        </li>
-
-                                        <li class="dropdown-link">
-                                            <a href="#" class="lh-12 d-flex--force flex-nowrap h-56">Link
-                                                3<span class="material-symbols-rounded">
-                                                    arrow_drop_down
-                                                </span></a>
-
-                                            <div class="dropdown second">
-                                                <ul>
-                                                    <li class="dropdown-link">
-                                                        <a href="#"
-                                                            class="lh-12 d-flex--force flex-nowrap h-56">Link
-                                                            1</a>
-                                                    </li>
-
-                                                    <li class="dropdown-link">
-                                                        <a href="#"
-                                                            class="lh-12 d-flex--force flex-nowrap h-56">Link
-                                                            2</a>
-                                                    </li>
-
-                                                    <li class="dropdown-link">
-                                                        <a href="#"
-                                                            class="lh-12 d-flex--force flex-nowrap h-56">Link
-                                                            3</a>
-                                                    </li>
-
-                                                    <li class="dropdown-link">
-                                                        <a href="#"
-                                                            class="lh-12 d-flex--force flex-nowrap h-56">More<span
-                                                                class="material-symbols-rounded">
-                                                                arrow_drop_down
-                                                            </span></a>
-
-                                                        <div class="dropdown second">
-                                                            <ul>
-                                                                <li class="dropdown-link">
-                                                                    <a href="#"
-                                                                        class="lh-12 d-flex--force flex-nowrap h-56">Link
-                                                                        1</a>
-                                                                </li>
-
-                                                                <li class="dropdown-link">
-                                                                    <a href="#"
-                                                                        class="lh-12 d-flex--force flex-nowrap h-56">Link
-                                                                        2</a>
-                                                                </li>
-
-                                                                <li class="dropdown-link">
-                                                                    <a href="#"
-                                                                        class="lh-12 d-flex--force flex-nowrap h-56">Link
-                                                                        3</a>
-                                                                </li>
-
-                                                                <div class="arrow"></div>
-                                                            </ul>
-                                                        </div>
-                                                    </li>
-
-                                                    <div class="arrow"></div>
-                                                </ul>
-                                            </div>
-                                        </li>
-
-                                        <li class="dropdown-link">
-                                            <a href="#" class="fs-12 lh-12 d-flex--force flex-nowrap h-56">Link
-                                                4</a>
-                                        </li> -->
-                                    </ul>
-                                </div>
-                            </li>
-                        </ul>
+                            
+                            
+                        
                     </div>
-                    
+
                     <div class="log-sign flex-md-center-center" style="--i: 1s">
                         <div class="d-flex gap-16">
                             <button id="theme-toggle" class="btn btn-styled darkblue-50 btn-styled-solid-rounded px-12--force py-8--force lh-12--force"><span class="color-white">☼</span></button>
@@ -186,6 +86,7 @@
                             <div></div>
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>

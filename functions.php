@@ -7,6 +7,7 @@ require_once get_template_directory() . '/inc/sponsor-functionality.php';
 require_once get_template_directory() . '/inc/events-functionality.php';
 require_once get_template_directory() . '/inc/alternative-title-functionality.php';
 require_once get_template_directory() . '/inc/dynamic-content-sections-functionality.php';
+require_once get_template_directory() . '/inc/menu-functionality.php';
 
 function add_custom_post_types_to_category($query) {
     if (is_category() && $query->is_main_query() && !is_admin()) {
@@ -23,12 +24,6 @@ function starter_theme_support(){
     add_theme_support('post-thumbnails');
 }
 add_action('after_setup_theme', 'starter_theme_support');
-
-function starter_menu(){
-    register_nav_menu( 'starter-menu', __('Menu multi-nível responsivo para o tema'));
-}
-add_action('init', 'starter_menu');
-
 
 function wpdev_filter_login_head() {
     if ( has_custom_logo() ) :
