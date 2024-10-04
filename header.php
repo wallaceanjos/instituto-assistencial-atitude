@@ -41,7 +41,7 @@
             <div class="d-flex flex-space-between w-100-p gap-md-24">
                 <div class="d-flex">
                     <div class="logo">
-                        <a href="#">
+                        <a href="/">
                             <div class="w-144 h-64"
                                 style="background:url('<?php echo esc_url($logo_img); ?>')no-repeat center center / contain">
                             </div>
