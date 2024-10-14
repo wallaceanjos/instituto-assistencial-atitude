@@ -2,7 +2,6 @@
 get_header();
 ?>
 
-
 <!-- Post Meta -->
 <?php
 $thumbnail_url = get_the_post_thumbnail_url($post->ID, 'full');
@@ -13,14 +12,14 @@ $alternative_title = get_post_meta(get_the_ID(), '_alternative_title', true);
 
 <!-- Home Section -->
 <section class="flex-column background-surface color-white">
-    <div class="w-100-p py-64 min-h-400" style="background: url(
+    <div class="w-100-p py-64 min-h-400" style="background-image: url(
                 <?php
                 if ($thumbnail_url) {
                     echo $thumbnail_url;
                 } else {
                     echo 'https://institutoassistencialatitude.com/wp-content/uploads/2024/09/placeholder.png';
                 }
-                ?>) fixed no-repeat center center / cover; box-shadow: 0 200px 130px -100px var(--darkblue) inset">
+                ?>); background-size: cover; background-position-x: center; background-position-y: center; box-shadow: 0 200px 130px -100px var(--darkblue) inset">
         <div class="max-w-1200 mx-auto px-16 px-md-24">
 
             <div class="flex-center-center">
@@ -72,12 +71,12 @@ while (have_posts()):
             <div class="section-wrapper m-0 p-0 w-100-p background-surface">
                 <!-- Section content -->
                 <section class="flex-column 
-            <?php if ($background_color): ?>
-                <?php echo $background_color; ?>
-            <?php else: ?>
-                background-surface
-            <?php endif; ?>
-            ">
+                    <?php if ($background_color): ?>
+                        <?php echo $background_color; ?>
+                    <?php else: ?>
+                        background-surface
+                    <?php endif; ?>
+                    ">
                     <div class="py-64">
                         <div class="max-w-1200 mx-auto px-16 px-md-24">
                             <div class="text-center flex-column flex-align-center text-center px-16">
@@ -94,14 +93,15 @@ while (have_posts()):
                                 <p class="fs-18 lh-30 fw-500 mb-48 mx-auto max-w-800">
                                     <?php echo $content; ?>
                                 </p>
-                                <?php if ($cta_url && $cta_label): ?>
+                                <!-- Se tiver cta_url e cta_label, exibe botão -->
+                                <?php if ($cta_url && $cta_label) : ?>
                                     <a class="btn btn-styled 
-                                <?php if ($cta_color): ?>
-                                    <?php echo $cta_color; ?>
-                                <?php else: ?>
-                                    lightblue
-                                <?php endif; ?>
-                                btn-styled-solid-pill py-8--force px-24--force fs-16--force"
+                                        <?php if ($cta_color): ?>
+                                            <?php echo $cta_color; ?> shadow-<?php echo $cta_color; ?>
+                                        <?php else: ?>
+                                            lightblue shadow-lightblue
+                                        <?php endif; ?>
+                                        btn-styled-solid-pill py-8--force px-24--force fs-16--force"
                                         href="<?php echo $cta_url; ?>">
                                         <?php echo $cta_label; ?>
                                     </a>
@@ -115,9 +115,9 @@ while (have_posts()):
                 <!-- Section Parallaxe -->
                 <?php if ($image): ?>
                     <section class="flex-column background-surface">
-                        <div class="w-100-p py-64 min-h-400" style="background: url(
+                        <div class="w-100-p py-64 min-h-400 parallaxing" style="background-image: url(
                     <?php echo $image; ?>
-                    ) fixed no-repeat top center / cover;">
+                    )">
                         </div>
                     </section>
                 <?php endif; ?>

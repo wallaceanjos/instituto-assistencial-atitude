@@ -99,7 +99,6 @@
      --------------------------------------------- */
     
     // Sections backgrounds
-    
     var pageSection = $(".home-section, .page-section, .small-section, .split-section");
     pageSection.each(function(indx){
         
@@ -404,17 +403,17 @@
     
         // Parallax        
         if (($(window).width() >= 1024) && (mobileTest == false)) {
-            $(".parallax-1").parallax("50%", 0.1);
-            $(".parallax-2").parallax("50%", 0.2);
-            $(".parallax-3").parallax("50%", 0.3);
-            $(".parallax-4").parallax("50%", 0.4);
-            $(".parallax-5").parallax("50%", 0.5);
-            $(".parallax-6").parallax("50%", 0.6);
-            $(".parallax-7").parallax("50%", 0.7);
-            $(".parallax-8").parallax("50%", 0.5);
-            $(".parallax-9").parallax("50%", 0.5);
-            $(".parallax-10").parallax("50%", 0.5);
-            $(".parallax-11").parallax("50%", 0.05);
+            $(".parallax-0").parallax("50%", 1);
+            $(".parallax-1").parallax("50%", 0.9);
+            $(".parallax-2").parallax("50%", 0.5);
+            $(".parallax-3").parallax("50%", 0.1);
+            $(".parallax-4").parallax("50%", 0.05);
+            $(".parallax-5").parallax("50%", 0);
+            $(".parallax-6").parallax("50%", -0.05);
+            $(".parallax-7").parallax("50%", -0.1);
+            $(".parallax-8").parallax("50%", -0.5);
+            $(".parallax-9").parallax("50%", -0.9);
+            $(".parallax-10").parallax("50%", -1);
         }
         
     }

@@ -53,7 +53,7 @@
     </div>
 
     <div class="post-prev-more">
-        <a href="<?php the_permalink()?>" class="btn btn-styled lightblue btn-styled-solid-rounded">Ver mais</a>
+        <a href="<?php the_permalink()?>" class="btn btn-styled lightblue shadow-lightblue btn-styled-solid-rounded">Ver mais</a>
     </div>
     
 </div>

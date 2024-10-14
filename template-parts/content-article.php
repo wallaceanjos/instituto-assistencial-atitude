@@ -31,14 +31,14 @@
         <?php $prev_post = get_previous_post(); ?>
         <?php if (!empty($prev_post)): ?>
             <a href="<?php echo esc_url(get_permalink($prev_post->ID)); ?>"
-                class="btn btn-styled darkblue btn-styled-solid-rounded"><i
+                class="btn btn-styled darkblue shadow-darkblue btn-styled-solid-rounded"><i
                     class="fa fa-angle-left"></i>&nbsp;<?php echo 'Prev post'; ?></a>
         <?php endif; ?>
 
         <?php $next_post = get_next_post(); ?>
         <?php if (!empty($next_post)): ?>
             <a href="<?php echo esc_url(get_permalink($next_post->ID)); ?>"
-                class="btn btn-styled darkblue btn-styled-solid-rounded"><?php echo 'Next post'; ?>&nbsp;<i
+                class="btn btn-styled darkblue shadow-darkblue btn-styled-solid-rounded"><?php echo 'Next post'; ?>&nbsp;<i
                     class="fa fa-angle-right"></i></a>
         <?php endif; ?>
     </div>

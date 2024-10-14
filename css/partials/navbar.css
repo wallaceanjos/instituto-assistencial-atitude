@@ -15,7 +15,7 @@
 
 /* Cor da navbar ao rolar a página */
 .navbar.scrolled {
-    background: light-dark(var(--darkblue), var(--darkblue-900));
+    background: var(--darkblue);
     padding: 8px 0;
 }
 
@@ -38,7 +38,7 @@
 }
 
 .nav-link > a{
-    color: var(--dark-fg);
+    color: var(--light);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -91,7 +91,7 @@
 .dropdown-link > a{
     display: flex;
     background-color: #fff;
-    color: light-dark(var(--light-primary), var(--dark-primary));
+    color: var(--primary);
     padding: .5rem 1rem;
     font-size: 11px!important;
     align-items: center;
@@ -104,7 +104,7 @@
 }
 
 .dropdown-link:hover > a{
-    background-color: light-dark(var(--light-primary), var(--dark-primary));
+    background-color: var(--primary);
     color: #fff;
 }
 
@@ -113,7 +113,7 @@
 }
 
 .dropdown-link:first-child:hover ~ .dropdown > ul::after{
-    background-color: light-dark(var(--light-primary), var(--dark-primary));
+    background-color: var(--primary);
 }
 
 .dropdown-link:first-child::before{
@@ -136,7 +136,7 @@
 }
 
 .dropdown-link:first-child:hover::before{
-    background-color: light-dark(var(--light-primary), var(--dark-primary));
+    background-color: var(--primary);
 }
 
 
@@ -212,15 +212,16 @@
 
 #check{
     position: absolute;
-    top: 50%;
-    right: 2rem;
-    transform: translateY(-50%);
-    width: 2.5rem;
-    height: 2.5rem;
+    top: 0;
+    right: 0;
+    width: 56px;
+    height: 56px;
     z-index: 90000;
     cursor: pointer;
+    border: 0;
     opacity: 0;
     display: none;
+    margin: 0;
 }
 
 #check:checked ~ .hamburger-menu-container .hamburger-menu div{
@@ -312,6 +313,12 @@
     .nav-links > ul > li:nth-child(6){
         --i: 1.2s;
     }
+    .nav-links > ul > li:nth-child(7){
+        --i: 1.3s;
+    }
+    .nav-links > ul > li:nth-child(n+8){
+        --i: 1.4s;
+    }
 
     .nav-link{
         width: 100%;
@@ -326,7 +333,7 @@
 
     .nav-link:hover > a{
         transform: scale(1);
-        background-color: light-dark(var(--light-active), var(--dark-active));
+        background-color: var(--warn);
     }
 
     .dropdown, .dropdown.second{
@@ -338,7 +345,7 @@
         pointer-events: auto;
         width: 100%;
         padding: 0;
-        background-color: var(--light-level);
+        background-color: var(--bg-inverse-alpha);
         display: none;
     }
 
@@ -364,7 +371,7 @@
     }
     
     .dropdown-link:first-child:hover ~ .dropdown > ul::after{
-        background-color: light-dark(var(--light-primary), var(--dark-primary));
+        background-color: var(--primary);
     }
 
     .dropdown-link:first-child::before{
@@ -374,7 +381,7 @@
         height: 11px;
         top: -5.5px;
         left: 32px;
-        background-color: light-dark(var(--dark-accent), var(--light-accent));
+        background-color: var(--accent);
         transform: rotate(45deg);
         cursor: pointer;
         transition: var(--transition);
@@ -386,22 +393,22 @@
     }
 
     .dropdown-link:first-child:hover::before{
-        background-color: light-dark(var(--light-accent), var(--dark-accent));
+        background-color: var(--accent);
     }
 
     .dropdown-link:hover > a{
         background-color: var(--yellow);
-        color: var(--lt-contrast);
+        color: var(--dark);
     }
 
     .dropdown-link:first-child:hover ~ .arrow{
-        background-color: light-dark(var(--light-active), var(--dark-active));
+        background-color: var(--warn);
     }
 
     .log-sign{
         flex: initial;
         width: 100%;
-        padding: 1.5rem 1.9rem;
+        padding: 1.5rem 1.9rem 5.5rem 1.9rem;
         justify-content: flex-start;
         opacity: 0;
         transform: translateY(15px);

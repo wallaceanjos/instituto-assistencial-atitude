@@ -29,7 +29,7 @@
             ?>
             
                 <!-- Flickity HTML init -->
-                <div class="carousel color-white" data-flickity>
+                <div class="carousel color-white" data-flickity='{ "wrapAround": true}'>
                     
                     <!-- Loop dos sliders cadastrados -->
                     <?php
@@ -53,9 +53,10 @@
                         $thumbnail_url = get_the_post_thumbnail_url($post_id);
                     ?>
                     <!-- Slide Item -->
-                    <div class="carousel-cell min-h-700 d-flex w-100-p"
+                    <div class="carousel-cell d-flex w-100-p"
                         style="
-                        height: calc(100vh);
+                        min-height: 100vh;
+                        height: 100vh;
                         background: url(
                                 <?php
                                     // se tiver imagem destacada, exibe a imagem destacada, senão exibe a imagem desse link https://placehold.co/1920x1080/003755/FFFFFF/png
@@ -64,7 +65,7 @@
                                     } else {
                                         echo 'https://institutoassistencialatitude.com/wp-content/uploads/2024/09/placeholder.png';
                                     }
-                                ?>) fixed no-repeat center center / cover;
+                                ?>)no-repeat center center / cover;
                         ">
                         <div class="d-flex flex-align-center mx-auto min-h-800 w-100-p">
                             
@@ -142,8 +143,7 @@
                                     } else {
                                         echo 'https://institutoassistencialatitude.com/wp-content/uploads/2024/09/placeholder.png';
                                     }
-                                ?>) fixed no-repeat center center / cover;">
-                                    
+                                ?>)no-repeat center center / cover;">
                                 </div>
                                 <!-- End midia image -->
                             <?php } else {  ?>
@@ -167,7 +167,7 @@
                                     
                                     <div class="d-flex">
                                             <?php if ($slider_cta_url): ?>
-                                                <a class="btn btn-styled yellow btn-styled-solid-rounded px-24--force py-8--force" href="<?php echo esc_url($slider_cta_url); ?>"><?php 
+                                                <a class="btn btn-styled yellow shadow-yellow btn-styled-solid-rounded px-24--force py-8--force" href="<?php echo esc_url($slider_cta_url); ?>"><?php 
                                                     if($slider_cta_text){
                                                         echo esc_html($slider_cta_text);
                                                     } else {
@@ -221,14 +221,14 @@
                         <style>
                             #tab<?php echo $tab_index; ?>:checked ~ .tab-navigation-panel .tab-label[for="tab<?php echo $tab_index; ?>"]{
                                 background: var(--lightblue);
-                                color: var(--dk-contrast);
+                                color: var(--light);
                                 border-color: var(--lightblue);
                             }
 
                             #tab<?php echo $tab_index; ?>:checked ~ .tab-content-wrapper #content<?php echo $tab_index; ?>{
                                 display: block;
-                                background: light-dark(var(--light-surface), var(--dark-surface));
-                                color: light-dark(var(--light-fg), var(--dark-fg));
+                                background: var(--surface);
+                                color: var(--fg);
                             }
                         </style>
                         <!-- Input para a Tab -->
@@ -291,7 +291,7 @@
                                     </div>
                                     <div class="d-flex">
                                         <?php if ($tab_cta_url): ?>
-                                            <a class="btn btn-styled dark btn-styled-solid-pill mb-20 py-8--force px-24--force fs-16--force" href="<?php echo esc_url($tab_cta_url); ?>"><?php 
+                                            <a class="btn btn-styled dark shadow-dark btn-styled-solid-pill mb-20 py-8--force px-24--force fs-16--force" href="<?php echo esc_url($tab_cta_url); ?>"><?php 
                                                 if($tab_cta_text){
                                                     echo esc_html($tab_cta_text);
                                                 } else {
@@ -299,7 +299,7 @@
                                                 }?>
                                             </a>
                                         <?php else: ?>
-                                            <a class="btn btn-styled dark btn-styled-solid-pill mb-20 py-8--force px-24--force fs-16--force" href="<?php echo get_permalink(); ?>"><?php 
+                                            <a class="btn btn-styled dark shadow-dark btn-styled-solid-pill mb-20 py-8--force px-24--force fs-16--force" href="<?php echo get_permalink(); ?>"><?php 
                                                 if($tab_cta_text){
                                                     echo esc_html($tab_cta_text);
                                                 } else {
@@ -488,7 +488,7 @@
                                     de apadrinhamento</h4>
                                 <p class="fs-18 lh-30 fw-700 m-0 px-16 max-w-600" style="font-size:18px">Apadrinhar uma criança carente é oferecer a ela mais do que apoio financeiro; é proporcionar esperança, cuidado e oportunidades para um futuro melhor. Com seu gesto de solidariedade, você contribui diretamente para transformar vidas, garantindo que essas crianças tenham acesso à educação, alimentação e acompanhamento necessário para o seu desenvolvimento. Juntos, podemos construir uma realidade mais justa e cheia de possibilidades para aqueles que mais precisam.</p>
                                 <div class="d-flex px-16">
-                                    <a href="https://institutoatitude.colabore.org/padrinhodossonhos/people/new" class="btn btn-styled guava btn-styled-solid-pill mb-20 py-8--force px-24--force fs-16--force" target="_blank">Apadrinhe uma criança</a>
+                                    <a href="https://institutoatitude.colabore.org/padrinhodossonhos/people/new" class="btn btn-styled guava shadow-guava btn-styled-solid-pill mb-20 py-8--force px-24--force fs-16--force" target="_blank">Apadrinhe uma criança</a>
                                 </div>
                             </div>
                         </div>
@@ -661,13 +661,10 @@
                 // Resetar a query
                 wp_reset_postdata();
                 ?>
-                
-                    
-                    
                 </div>
             </div>
             <div class="flex-center-center mt-64">
-                <a href="https://institutoassistencialatitude.com/empresas-parceiras/" target="_blank" class="btn btn-styled lightblue btn-styled-solid-pill">Seja uma Empresa de Atitude</a>
+                <a href="https://institutoassistencialatitude.com/empresas-parceiras/" target="_blank" class="btn btn-styled lightblue shadow-lightblue btn-styled-solid-pill">Seja uma Empresa de Atitude</a>
             </div>
             
         </section>

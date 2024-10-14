@@ -1,6 +1,10 @@
 /* -------------------------------------------------------------------------- */
 /* BACKDROP HERO */
 /* -------------------------------------------------------------------------- */
+.backdrop-hero .carousel,
+.backdrop-hero .carousel .flickity-viewport {
+    height: 100%!important;
+}
 
 .backdrop-hero .carousel-cell {
     /* full width */
@@ -13,7 +17,7 @@
     transform: translateY(-50%);
     width: 50px;
     height: 56px;
-    background-color: var(--light-bg);
+    background-color: var(--bg);
     border: none;
     cursor: pointer;
     display: flex;
@@ -30,7 +34,7 @@
     transform: translateY(-50%);
     width: 50px;
     height: 56px;
-    background-color: var(--light-bg);
+    background-color: var(--bg);
     border: none;
     cursor: pointer;
     display: flex;
@@ -117,11 +121,13 @@
     min-height: 644px !important;
     display: flex;
 }
+
 @media screen and (min-width: 1024px) {
     .comments .flickity-viewport {
         min-height: 540px !important;
     }
 }
+
 @media screen and (min-width: 1440px) {
     .comments .flickity-viewport {
         min-height: 440px !important;
@@ -222,7 +228,7 @@
     transform: translateY(-50%);
     width: 50px;
     height: 56px;
-    background-color: var(--light-bg);
+    background-color: var(--bg);
     border: none;
     cursor: pointer;
     display: flex;
@@ -239,7 +245,7 @@
     transform: translateY(-50%);
     width: 50px;
     height: 56px;
-    background-color: var(--light-bg);
+    background-color: var(--bg);
     border: none;
     cursor: pointer;
     display: flex;

@@ -9,8 +9,8 @@ input[type="search"],
 textarea {
     width: 100%;
     padding: 12px 24px;
-    background-color: var(--light-bg);
-    color: var(--light-fg);
+    background-color: var(--bg);
+    color: var(--fg);
     border: 0px solid #ccc;
     border-radius: 16px;
     outline: none;

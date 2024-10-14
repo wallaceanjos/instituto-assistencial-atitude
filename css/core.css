@@ -1,4 +1,4 @@
-@import "./partials/theme.css";
+/* @import "./partials/theme.css";
 @import "./partials/navbar.css";
 @import "./partials/slide.css";
 @import "./partials/button.css";
@@ -9,7 +9,7 @@
 @import "./partials/sponsors.css";
 @import "./partials/price.css";
 @import "./partials/line-icons.css";
-@import "./partials/animate.css";
+@import "./partials/animate.css"; */
 
 /* reset */
 * {
@@ -20,8 +20,8 @@ html,
 body {
     margin: 0;
     padding: 0;
-    background-color: light-dark(var(--light-bg), var(--dark-bg));
-    color: light-dark(var(--light-fg), var(--dark-fg));
+    background-color: var(--bg);
+    color: var(--fg);
     overflow-x: hidden;
 }
 
@@ -53,11 +53,27 @@ a:active {
     width: 100%;
     top: 0;
     left: 0;
-    background-color: var(--light-overlay)
+    background-color: var(--surface-alpha)
 }
 
 .backdrop-hero{
     height: calc(100vh);
-    min-height: 800px;
+    /* min-height: 800px; */
     width: 100%;
+}
+
+.parallaxing{
+    background-attachment:unset;
+    background-position-x: 50%;
+    background-position-y: 0%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+@media screen and (min-width: 1024px) {
+    .parallaxing{
+        background-attachment: fixed;
+        background-position: top center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 }

@@ -23,14 +23,14 @@ $section_3_title = get_post_meta(get_the_ID(), 'section_3_title', true);
 
 <!-- Home Section -->
 <section class="flex-column background-surface color-white">
-    <div class="w-100-p py-64 min-h-400" style="background: url(
+    <div class="w-100-p py-64 min-h-400" style="background-image: url(
                 <?php
                 if ($thumbnail_url) {
                     echo $thumbnail_url;
                 } else {
                     echo 'https://institutoassistencialatitude.com/wp-content/uploads/2024/09/placeholder.png';
                 }
-                ?>) fixed no-repeat center center / cover; box-shadow: 0 200px 130px -100px var(--darkblue) inset">
+                ?>); background-size: cover; background-position-x: center; background-position-y: center; box-shadow: 0 200px 130px -100px var(--darkblue) inset">
         <div class="max-w-1200 mx-auto px-16 px-md-24">
             <div class="grid-md-12 pt-64 my-64">
                 <div class="colspan-8">
@@ -62,7 +62,7 @@ $section_3_title = get_post_meta(get_the_ID(), 'section_3_title', true);
                         .mod-breadcrumbs>a {
                             padding: 4px 16px;
                             background: var(--yellow);
-                            color: var(--lt-contrast);
+                            color: var(--dark);
                             border-radius: 8px;
                         }
                     </style>
@@ -128,7 +128,7 @@ $section_3_title = get_post_meta(get_the_ID(), 'section_3_title', true);
             </p>
             <a class="btn btn-3d green shadow-green-900 btn-3d-round"
                 href="https://institutoatitude.colabore.org/doeparaoinstituto/single_step" target="_blank"
-                class="btn btn-styled lightblue btn-styled-solid-rounded">Doe agora</a>
+                class="btn btn-styled lightblue shadow-lightblue btn-styled-solid-rounded">Doe agora</a>
         </div>
     </div>
 </section>

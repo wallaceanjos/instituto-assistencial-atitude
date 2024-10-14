@@ -104,7 +104,7 @@
 
             <!-- Send Button -->
             <button name="submit" type="submit" id="submit"
-                class="btn btn-styled yellow btn-styled-solid-rounded"><?php _e('Enviar', 'textdomain'); ?></button>
+                class="btn btn-styled yellow shadow-yellow btn-styled-solid-rounded"><?php _e('Enviar', 'textdomain'); ?></button>
             <?php comment_id_fields(); ?>
             <?php do_action('comment_form', $post->ID); ?>
         </form>

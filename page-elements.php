@@ -7,7 +7,7 @@ $thumbnail_url = get_the_post_thumbnail_url($post->ID, 'full');
 ?>
 <!-- single.php - Section 1 -->
 <section class="flex-column background-surface color-white">
-    <div class="w-100-p py-64 min-h-400" style="background: url(
+    <div class="w-100-p py-64 min-h-400" style="background-image: url(
                 <?php
                 // se tiver imagem destacada, exibe a imagem destacada, senão exibe a imagem desse link https://placehold.co/1920x1080/003755/FFFFFF/png
                 if ($thumbnail_url) {
@@ -15,7 +15,7 @@ $thumbnail_url = get_the_post_thumbnail_url($post->ID, 'full');
                 } else {
                     echo 'https://institutoassistencialatitude.com/wp-content/uploads/2024/09/placeholder.png';
                 }
-                ?>) fixed no-repeat center center / cover; box-shadow: 0 200px 130px -100px var(--darkblue) inset">
+                ?>); background-size: cover; background-position-x: center; background-position-y: center; box-shadow: 0 200px 130px -100px var(--darkblue) inset">
         <div class="max-w-1200 mx-auto px-16 px-md-24">
             <div class="grid-md-12 pt-64 my-64">
                 <div class="colspan-8">
@@ -39,7 +39,7 @@ $thumbnail_url = get_the_post_thumbnail_url($post->ID, 'full');
                         .mod-breadcrumbs>a {
                             padding: 4px 16px;
                             background: var(--yellow);
-                            color: var(--lt-contrast);
+                            color: var(--dark);
                             border-radius: 8px;
                         }
                     </style>
@@ -159,7 +159,7 @@ $thumbnail_url = get_the_post_thumbnail_url($post->ID, 'full');
 
 
 <section class="flex-column background-surface color-white">
-    <div class="w-100-p py-64 min-h-400" style="background: url('https://institutoassistencialatitude.com/wp-content/uploads/2024/09/placeholder.png') fixed no-repeat center center / cover; box-shadow: 0 200px 130px -100px var(--darkblue) inset">
+    <div class="w-100-p py-64 min-h-400" style="background-image: url('https://institutoassistencialatitude.com/wp-content/uploads/2024/09/placeholder.png');  background-size: cover; background-position-x: center; background-position-y: center; box-shadow: 0 200px 130px -100px var(--darkblue) inset">
         <div class="max-w-1200 mx-auto px-16 px-md-24">
             <div class="grid-md-12 pt-64 my-64">
                 <div class="colspan-8">
@@ -183,7 +183,7 @@ $thumbnail_url = get_the_post_thumbnail_url($post->ID, 'full');
                         .mod-breadcrumbs>a {
                             padding: 4px 16px;
                             background: var(--yellow);
-                            color: var(--lt-contrast);
+                            color: var(--dark);
                             border-radius: 8px;
                         }
                     </style>
@@ -332,23 +332,23 @@ $thumbnail_url = get_the_post_thumbnail_url($post->ID, 'full');
     <div class="max-w-1200 w-100-p mx-auto">
         <div class="grid-md-2 gap-32">
             <div class="flex-column flex-center-center">
-                <pre><code>btn btn-styled lightblue btn-styled-solid</code></pre>
-                <button class="btn btn-styled lightblue btn-styled-solid">solid</button>
+                <pre><code>btn btn-styled lightblue shadow-lightblue btn-styled-solid</code></pre>
+                <button class="btn btn-styled lightblue shadow-lightblue btn-styled-solid">solid</button>
             </div>
             
             <div class="flex-column flex-center-center">
-                <pre><code>btn btn-styled lightblue btn-styled-dashed</code></pre>
-                <button class="btn btn-styled lightblue btn-styled-dashed">dashed</button>
+                <pre><code>btn btn-styled lightblue shadow-lightblue btn-styled-dashed</code></pre>
+                <button class="btn btn-styled lightblue shadow-lightblue btn-styled-dashed">dashed</button>
             </div>
        
             <div class="flex-column flex-center-center">
-                <pre><code>btn btn-styled lightblue btn-styled-dotted</code></pre>
-                <button class="btn btn-styled lightblue btn-styled-dotted">dotted</button>
+                <pre><code>btn btn-styled lightblue shadow-lightblue btn-styled-dotted</code></pre>
+                <button class="btn btn-styled lightblue shadow-lightblue btn-styled-dotted">dotted</button>
             </div>
             
             <div class="flex-column flex-center-center">
-                <pre><code>btn btn-styled lightblue btn-styled-double</code></pre>
-                <button class="btn btn-styled lightblue btn-styled-double">double</button>
+                <pre><code>btn btn-styled lightblue shadow-lightblue btn-styled-double</code></pre>
+                <button class="btn btn-styled lightblue shadow-lightblue btn-styled-double">double</button>
             </div>
         </div>
         
@@ -356,23 +356,23 @@ $thumbnail_url = get_the_post_thumbnail_url($post->ID, 'full');
         
         <div class="grid-md-2 gap-32">
             <div class="flex-column flex-center-center">
-                <pre><code>btn btn-styled lightblue btn-styled-solid-rounded</code></pre>
-                <button class="btn btn-styled lightblue btn-styled-solid-rounded">solid-rounded</button>
+                <pre><code>btn btn-styled lightblue shadow-lightblue btn-styled-solid-rounded</code></pre>
+                <button class="btn btn-styled lightblue shadow-lightblue btn-styled-solid-rounded">solid-rounded</button>
             </div>
             
             <div class="flex-column flex-center-center">
-                <pre><code>btn btn-styled lightblue btn-styled-dashed-rounded</code></pre>
-                <button class="btn btn-styled lightblue btn-styled-dashed-rounded">dashed-rounded</button>
+                <pre><code>btn btn-styled lightblue shadow-lightblue btn-styled-dashed-rounded</code></pre>
+                <button class="btn btn-styled lightblue shadow-lightblue btn-styled-dashed-rounded">dashed-rounded</button>
             </div>
        
             <div class="flex-column flex-center-center">
-                <pre><code>btn btn-styled lightblue btn-styled-dotted-rounded</code></pre>
-                <button class="btn btn-styled lightblue btn-styled-dotted-rounded">dotted-rounded</button>
+                <pre><code>btn btn-styled lightblue shadow-lightblue btn-styled-dotted-rounded</code></pre>
+                <button class="btn btn-styled lightblue shadow-lightblue btn-styled-dotted-rounded">dotted-rounded</button>
             </div>
             
             <div class="flex-column flex-center-center">
-                <pre><code>btn btn-styled lightblue btn-styled-double-rounded</code></pre>
-                <button class="btn btn-styled lightblue btn-styled-double-rounded">double-rounded</button>
+                <pre><code>btn btn-styled lightblue shadow-lightblue btn-styled-double-rounded</code></pre>
+                <button class="btn btn-styled lightblue shadow-lightblue btn-styled-double-rounded">double-rounded</button>
             </div>
         </div>
         
@@ -380,23 +380,23 @@ $thumbnail_url = get_the_post_thumbnail_url($post->ID, 'full');
         
         <div class="grid-md-2 gap-32">
             <div class="flex-column flex-center-center">
-                <pre><code>btn btn-styled lightblue btn-styled-solid-pill</code></pre>
-                <button class="btn btn-styled lightblue btn-styled-solid-pill">solid-pill</button>
+                <pre><code>btn btn-styled lightblue shadow-lightblue btn-styled-solid-pill</code></pre>
+                <button class="btn btn-styled lightblue shadow-lightblue btn-styled-solid-pill">solid-pill</button>
             </div>
             
             <div class="flex-column flex-center-center">
-                <pre><code>btn btn-styled lightblue btn-styled-dashed-pill</code></pre>
-                    <button class="btn btn-styled lightblue btn-styled-dashed-pill">dashed-pill</button>
+                <pre><code>btn btn-styled lightblue shadow-lightblue btn-styled-dashed-pill</code></pre>
+                    <button class="btn btn-styled lightblue shadow-lightblue btn-styled-dashed-pill">dashed-pill</button>
             </div>
        
             <div class="flex-column flex-center-center">
-                <pre><code>btn btn-styled lightblue btn-styled-dotted-pill</code></pre>
-                    <button class="btn btn-styled lightblue btn-styled-dotted-pill">dotted-pill</button>
+                <pre><code>btn btn-styled lightblue shadow-lightblue btn-styled-dotted-pill</code></pre>
+                    <button class="btn btn-styled lightblue shadow-lightblue btn-styled-dotted-pill">dotted-pill</button>
             </div>
             
             <div class="flex-column flex-center-center">
-                <pre><code>btn btn-styled lightblue btn-styled-double-pill</code></pre>
-                    <button class="btn btn-styled lightblue btn-styled-double-pill">double-pill</button>
+                <pre><code>btn btn-styled lightblue shadow-lightblue btn-styled-double-pill</code></pre>
+                    <button class="btn btn-styled lightblue shadow-lightblue btn-styled-double-pill">double-pill</button>
             </div>
         </div>
     </div>

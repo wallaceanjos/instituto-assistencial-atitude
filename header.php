@@ -49,7 +49,7 @@
                     </div>
                 </div>
 
-                <div class="d-flex">
+                <div class="d-flex position-relative">
                     <input type="checkbox" name="" id="check">
                     <div class="nav-btn gap-md-24">
                         <div class="nav-links flex-md-center-center">
@@ -74,9 +74,9 @@
 
                     <div class="log-sign flex-md-center-center" style="--i: 1s">
                         <div class="d-flex gap-16">
-                            <button id="theme-toggle" class="btn btn-styled darkblue-50 btn-styled-solid-rounded px-12--force py-8--force lh-12--force"><span class="color-white">☼</span></button>
+                            <button id="theme-toggle" class="btn btn-styled darkblue-50 shadow-darkblue-50 btn-styled-solid-rounded px-12--force py-8--force lh-12--force"><span class="color-white">☼</span></button>
                             
-                            <a class="btn btn-styled yellow btn-styled-solid-rounded px-16--force py-8--force" href="https://institutoatitude.colabore.org/doeparaoinstituto/single_step" target="_blank">Doe</a>
+                            <a class="btn btn-styled yellow shadow-yellow btn-styled-solid-rounded px-16--force py-8--force" href="https://institutoatitude.colabore.org/doeparaoinstituto/single_step" target="_blank">Doe</a>
                             </div>
                         </div>
                     </div>
