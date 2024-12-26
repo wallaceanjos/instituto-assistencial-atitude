@@ -8,6 +8,7 @@ require_once get_template_directory() . '/inc/events-functionality.php';
 require_once get_template_directory() . '/inc/alternative-title-functionality.php';
 require_once get_template_directory() . '/inc/dynamic-content-sections-functionality.php';
 require_once get_template_directory() . '/inc/menu-functionality.php';
+require_once get_template_directory() . '/inc/transparency-functionality.php';
 
 function add_custom_post_types_to_category($query) {
     if (is_category() && $query->is_main_query() && !is_admin()) {
@@ -44,9 +45,9 @@ add_action( 'login_head', 'wpdev_filter_login_head', 100 );
 
 function get_category_events_posts( $query ) {
     if ( is_admin() || ! $query->is_main_query() ) {
-      return;
+        return;
     }
-   
+
     if ( is_page( 'events' ) ) { // Substitua 'nome-da-pagina' pelo slug da página que você criou
       $query->set( 'category_name', 'eventos' ); // Substitua 'eventos' pelo slug da categoria que você quer exibir
     }
